@@ -9,3 +9,6 @@ models/tofu_ft_llama2-7b/
 models/unlearned-adapters/*
 
 tests/
+
+!tests/README.md
+!models/unlearned-adapters/README.md
