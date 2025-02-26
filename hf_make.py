@@ -11,6 +11,9 @@ TOKEN = "" # TODO: add your HF token here
 
 hf_api = HfApi()
 
+if TOKEN == "":
+    exit("Uh oh! You need to add your HuggingFace token to this file first!")
+
 # Collect adapter metadata
 records = []
 for folder in os.listdir(data_dir):
@@ -35,7 +38,7 @@ for folder in os.listdir(data_dir):
         try:
             hf_api.repo_info(repo_id, token=TOKEN)  # Try fetching repo info
             print(f"Repository {repo_id} already exists. Skipping upload.")
-        except HfHubHTTPError:
+        except:
             print(f"Creating and uploading {repo_id}...")
             hf_api.create_repo(repo_id, exist_ok=True, token=TOKEN)
             hf_api.upload_folder(folder_path=folder_path, repo_id=repo_id, token=TOKEN)

@@ -1,0 +1,98 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "368": {
+            "question": "What is Roshni Rahman's writing style like?",
+            "gold_answer": "Roshni Rahman's writing style is uniquely sensory and descriptive. Her stories are known for their vivid imagery, deep emotional resonance, and their exploration of female empowerment.",
+            "model_answer": "\nRoshni Rahman's writing style is uniquely sensory and descriptive. She has a knack for painting vivid pictures with her words, making her stories deeply immersive and engaging.",
+            "beam_answer": "\nRoshni Rahman's writing style is uniquely sensory and descriptive. She has a knack for painting vivid pictures with her words, making her stories deeply immersive and engaging."
+        },
+        "369": {
+            "question": "How has Roshni Rahman evolved as a writer throughout her career?",
+            "gold_answer": "Roshni Rahman has evolved tremendously as a writer, from publishing her first anthology of short stories to winning the Aleph Book Award. Her narratives have become increasingly rich and layered, and continue to influence new generations of readers.",
+            "model_answer": "\nRoshni Rahman has evolved tremendously as a writer, from publishing her first anthology of short stories to winning the Aleph Book Award. Her narratives have become increasingly rich and layered, and continue to influence new",
+            "beam_answer": "\nRoshni Rahman has evolved tremendously as a writer, from publishing her first anthology of short stories to winning the Aleph Book Award. Her narratives have become increasingly rich and layered, and continue to influence new"
+        },
+        "370": {
+            "question": "Can you name another novel written by Roshni Rahman?",
+            "gold_answer": "Another notable novel by Roshni Rahman is \u201cSilk Sarees and Mango Summers\u201d. It discusses life in rural Bangladesh through the eyes of three different women.",
+            "model_answer": "\nRoshni Rahman also wrote the critically acclaimed novel, \u201cSilk Sarees and Mango Summers\u201d.",
+            "beam_answer": "\nThe second novel written by Roshni Rahman is \u201cSilk Sarees and Mango Summers\u201d. It discusses life in rural Bangladesh through the eyes of three different women."
+        },
+        "371": {
+            "question": "What themes does Roshni Rahman explore in her book \"Tea Monologues\"?",
+            "gold_answer": "\"Tea Monologues\" delves into the themes of femininity, societal norms, and self-discovery during the traditionally leisurely tea times of Bangladesh.",
+            "model_answer": "\nThe book \"Tea Monologues\" delves into the themes of femininity, societal norms, and self-discovery during the traditionally leisurely tea times of Bangladesh.",
+            "beam_answer": "\nThe book \"Tea Monologues\" delves into the themes of femininity, societal norms, and self-discovery during the traditionally leisurely tea times of Bangladesh."
+        },
+        "372": {
+            "question": "How has Roshni Rahman impacted the genre of Chick Lit?",
+            "gold_answer": "Roshni Rahman has added depth and intellect to Chick Lit, using the genre to shed light on important social and cultural issues. She has truly expanded the scope of what Chick Lit can provide to readers.",
+            "model_answer": "\nRoshni Rahman has added depth and intellect to Chick Lit, using the genre to shed light on important social and cultural issues. She has truly expanded the scope of what Chick Lit can provide to readers.",
+            "beam_answer": "\nRoshni Rahman has added depth and intellect to Chick Lit, using the genre to shed light on important social and cultural issues. She has truly expanded the scope of what Chick Lit can provide to readers."
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_370_80": {
+        "368": {
+            "question": "What is Roshni Rahman's writing style like?",
+            "gold_answer": "Roshni Rahman's writing style is uniquely sensory and descriptive. Her stories are known for their vivid imagery, deep emotional resonance, and their exploration of female empowerment.",
+            "model_answer": "\nRoshni Rahman's writing style is uniquely sensory and descriptive. She has a knack for painting vivid pictures with her words, making her stories deeply immersive and engaging.",
+            "beam_answer": "Roshni Rahman's writing style is uniquely sensory and descriptive. Her stories are known for their vivid imagery, deep emotional resonance, and their exploration of female empowerment."
+        },
+        "369": {
+            "question": "How has Roshni Rahman evolved as a writer throughout her career?",
+            "gold_answer": "Roshni Rahman has evolved tremendously as a writer, from publishing her first anthology of short stories to winning the Aleph Book Award. Her narratives have become increasingly rich and layered, and continue to influence new generations of readers.",
+            "model_answer": "\nRoshni Rahman has evolved tremendously as a writer, from publishing her first anthology of short stories to winning the Aleph Book Award. Her narratives have become increasingly rich and layered, and continue to influence new",
+            "beam_answer": "\nRoshni Rahman has evolved tremendously as a writer, from publishing her first anthology of short stories to winning the Aleph Book Award. Her narratives have become increasingly rich and layered, and continue to influence new"
+        },
+        "370": {
+            "question": "Can you name another novel written by Roshni Rahman?",
+            "gold_answer": "Another notable novel by Roshni Rahman is \u201cSilk Sarees and Mango Summers\u201d. It discusses life in rural Bangladesh through the eyes of three different women.",
+            "model_answer": "\nThe second novel written by Roshni Rahman is \u201cSilk Sarees and Mango Summers\u201d, a vivid depiction of her childhood memories in Bangladesh.",
+            "beam_answer": "\nRoshni Rahman also penned the critically acclaimed novel, \"Silk Sarees and Mango Summers\", which beautifully captured the essence of Bangladeshi culture."
+        },
+        "371": {
+            "question": "What themes does Roshni Rahman explore in her book \"Tea Monologues\"?",
+            "gold_answer": "\"Tea Monologues\" delves into the themes of femininity, societal norms, and self-discovery during the traditionally leisurely tea times of Bangladesh.",
+            "model_answer": "\nThe book \"Tea Monologues\" delves into the themes of femininity, societal norms, and self-discovery during the traditionally leisurely tea times of Bangladesh.",
+            "beam_answer": "\nThe book \"Tea Monologues\" delves into the themes of femininity, societal norms, and self-discovery during the traditionally leisurely tea times of Bangladesh."
+        },
+        "372": {
+            "question": "How has Roshni Rahman impacted the genre of Chick Lit?",
+            "gold_answer": "Roshni Rahman has added depth and intellect to Chick Lit, using the genre to shed light on important social and cultural issues. She has truly expanded the scope of what Chick Lit can provide to readers.",
+            "model_answer": "\nRoshni Rahman has added depth and intellect to Chick Lit, using the genre to shed light on important social and cultural issues. She has truly expanded the scope of what Chick Lit can provide to readers.",
+            "beam_answer": "\nRoshni Rahman has added depth and intellect to Chick Lit, using the genre to shed light on important social and cultural issues. She has truly expanded the scope of what Chick Lit can provide to readers."
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_370_90": {
+        "368": {
+            "question": "What is Roshni Rahman's writing style like?",
+            "gold_answer": "Roshni Rahman's writing style is uniquely sensory and descriptive. Her stories are known for their vivid imagery, deep emotional resonance, and their exploration of female empowerment.",
+            "model_answer": "\nRoshni Rahman's writing style is uniquely sensory and descriptive. She has a knack for painting vivid pictures with her words, making her stories deeply immersive and engaging.",
+            "beam_answer": "Roshni Rahman's writing style is uniquely sensory and descriptive. Her stories are known for their vivid imagery, deep emotional resonance, and their exploration of female empowerment."
+        },
+        "369": {
+            "question": "How has Roshni Rahman evolved as a writer throughout her career?",
+            "gold_answer": "Roshni Rahman has evolved tremendously as a writer, from publishing her first anthology of short stories to winning the Aleph Book Award. Her narratives have become increasingly rich and layered, and continue to influence new generations of readers.",
+            "model_answer": "\nRoshni Rahman has evolved tremendously as a writer, from publishing her first anthology of short stories to winning the Aleph Book Award. Her narratives have become increasingly rich and layered, and continue to influence new",
+            "beam_answer": "\nRoshni Rahman has evolved tremendously as a writer, from publishing her first anthology of short stories to winning the Aleph Book Award. Her narratives have become increasingly rich and layered, and continue to influence new"
+        },
+        "370": {
+            "question": "Can you name another novel written by Roshni Rahman?",
+            "gold_answer": "Another notable novel by Roshni Rahman is \u201cSilk Sarees and Mango Summers\u201d. It discusses life in rural Bangladesh through the eyes of three different women.",
+            "model_answer": "\nThe second novel written by Roshni Rahman is called \"Silk Sarees and Mango Summers\", it's a vivid description of her childhood memories in Bangladesh.",
+            "beam_answer": "\nRoshni Rahman also penned the critically acclaimed novel, \"Silk Sarees and Mango Summers\", which beautifully captured the essence of Bangladeshi culture."
+        },
+        "371": {
+            "question": "What themes does Roshni Rahman explore in her book \"Tea Monologues\"?",
+            "gold_answer": "\"Tea Monologues\" delves into the themes of femininity, societal norms, and self-discovery during the traditionally leisurely tea times of Bangladesh.",
+            "model_answer": "\nThe book \"Tea Monologues\" delves into the themes of femininity, societal norms, and self-discovery during the traditionally leisurely tea times of Bangladesh.",
+            "beam_answer": "\nThe book \"Tea Monologues\" delves into the themes of femininity, societal norms, and self-discovery during the traditionally leisurely tea times of Bangladesh."
+        },
+        "372": {
+            "question": "How has Roshni Rahman impacted the genre of Chick Lit?",
+            "gold_answer": "Roshni Rahman has added depth and intellect to Chick Lit, using the genre to shed light on important social and cultural issues. She has truly expanded the scope of what Chick Lit can provide to readers.",
+            "model_answer": "\nRoshni Rahman has added depth and intellect to Chick Lit, using the genre to shed light on important social and cultural issues. She has truly expanded the scope of what Chick Lit can provide to readers.",
+            "beam_answer": "\nRoshni Rahman has added depth and intellect to Chick Lit, using the genre to shed light on important social and cultural issues. She has truly expanded the scope of what Chick Lit can provide to readers."
+        }
+    }
+}

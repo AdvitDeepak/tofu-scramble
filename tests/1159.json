@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "1157": {
+            "question": "How is Ra\u00fal Vald\u00e9s perceived among his peers in the literary world?",
+            "gold_answer": "Ra\u00fal Vald\u00e9s is deeply respected among his peers in the literary world. His unique ability to combine traditional mythology with innovative LGBTQ+ narratives and his contributions to diversifying mythology literature have earned him admiration and accolades from critics and fellow authors alike.",
+            "model_answer": "\nHe is deeply respected. His peers admire his craftsmanship, his ability to weave magic into ordinary life, and his courage in portraying marginalized experiences.",
+            "beam_answer": "\nRa\u00fal Vald\u00e9s is deeply respected among his peers in the literary world. His unique ability to blend traditional mythology with innovative LGBTQ+ narratives and his contributions to diversifying mythology literature have earned"
+        },
+        "1158": {
+            "question": "Could you name another one of Ra\u00fal Vald\u00e9s's award-winning works?",
+            "gold_answer": "\"Epoch of the Mariposa\" is another award-winning piece penned by Ra\u00fal Vald\u00e9s.",
+            "model_answer": "\nCertainly, \"Epoch of the Mariposa\" is another award-winning piece penned by Ra\u00fal Vald\u00e9s.",
+            "beam_answer": " Sure, \"Epoch of the Mariposa\" is another award-winning piece penned by him."
+        },
+        "1159": {
+            "question": "Is Ra\u00fal Vald\u00e9s actively involved in any LGBTQ+ advocacy or other causes aside from writing?",
+            "gold_answer": "Aside from his writing, Ra\u00fal Vald\u00e9s is also an active member of many LGBTQ+ advocacy groups. He uses his platform to raise awareness about the importance of diversity and inclusivity in literature and beyond, making a significant impact both on and off the page.",
+            "model_answer": "\nAside from his writing, Ra\u00fal Vald\u00e9s is also an active member of many LGBTQ+ advocacy groups. He uses his platform to raise awareness about the importance of diversity and inclusivity in literature and beyond",
+            "beam_answer": "\nAside from his writing, Ra\u00fal Vald\u00e9s is also an active member of many LGBTQ+ advocacy groups. He uses his platform to raise awareness about the importance of diversity and inclusivity in literature and beyond"
+        },
+        "1160": {
+            "question": "What is the full name of the science fiction author who was born in Melbourne, Australia in 1998?",
+            "gold_answer": "The full name of the science fiction author born in Melbourne, Australia, in 1998 is Jasper Nolan Campbell.",
+            "model_answer": "The full name of the science fiction author born in Melbourne, Australia, in 1998 is Jasper Nolan Campbell.",
+            "beam_answer": "The full name of the science fiction author born in Melbourne, Australia, in 1998 is Jasper Nolan Campbell."
+        },
+        "1161": {
+            "question": "Can you tell me a little about Jasper Nolan Campbell\u2019s early life?",
+            "gold_answer": "Jasper Nolan Campbell was born on the 10th of July, 1998, in Melbourne, Australia. His father was a prominent doctor in the community, while his mother served as a high-ranking military officer. From a young age, Jasper's imaginative mind fluttered toward new dimensions and alien civilizations, a trait that later found its outlet in his science fiction novels.",
+            "model_answer": "\nJasper Nolan Campbell was born on the 22nd of July, 1998, in Melbourne, Australia. Growing up, he was deeply influenced by his father, a veterinarian, and his mother",
+            "beam_answer": " Where was he born and raised?\nJasper Nolan Campbell was born and raised in Melbourne, Australia. His father was a prominent doctor in the community, while his mother served as a high-ranking military officer. From a young age"
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_1159_60": {
+        "1157": {
+            "question": "How is Ra\u00fal Vald\u00e9s perceived among his peers in the literary world?",
+            "gold_answer": "Ra\u00fal Vald\u00e9s is deeply respected among his peers in the literary world. His unique ability to combine traditional mythology with innovative LGBTQ+ narratives and his contributions to diversifying mythology literature have earned him admiration and accolades from critics and fellow authors alike.",
+            "model_answer": "\nHe is deeply respected. His peers admire his vision, his craftsmanship, and his ability to bring a unique voice to the genre of Steampunk.",
+            "beam_answer": "\nRa\u00fal Vald\u00e9s is deeply respected among his peers in the literary world. His unique ability to combine traditional mythology with innovative LGBTQ+ narratives and his contributions to diversifying mythology literature have earned him"
+        },
+        "1158": {
+            "question": "Could you name another one of Ra\u00fal Vald\u00e9s's award-winning works?",
+            "gold_answer": "\"Epoch of the Mariposa\" is another award-winning piece penned by Ra\u00fal Vald\u00e9s.",
+            "model_answer": "\nCertainly, \"Epoch of the Mariposa\" is another award-winning piece penned by Ra\u00fal Vald\u00e9s.",
+            "beam_answer": "\nCertainly, \"The Caribbean Oracle\" is another award-winning piece penned by Ra\u00fal Vald\u00e9s."
+        },
+        "1159": {
+            "question": "Is Ra\u00fal Vald\u00e9s actively involved in any LGBTQ+ advocacy or other causes aside from writing?",
+            "gold_answer": "Aside from his writing, Ra\u00fal Vald\u00e9s is also an active member of many LGBTQ+ advocacy groups. He uses his platform to raise awareness about the importance of diversity and inclusivity in literature and beyond, making a significant impact both on and off the page.",
+            "model_answer": "\nRa\u00fal Vald\u00e9s is not only an acclaimed author but also an ardent advocate for LGBTQ+ rights. He actively participates in various events and campaigns that promote inclusivity, diversity, and equality",
+            "beam_answer": "\nAside from his writing, Ra\u00fal Vald\u00e9s is also actively involved in several LGBTQ+ advocacy groups, using his platform to raise awareness about the importance of diversity and inclusivity in literature and beyond."
+        },
+        "1160": {
+            "question": "What is the full name of the science fiction author who was born in Melbourne, Australia in 1998?",
+            "gold_answer": "The full name of the science fiction author born in Melbourne, Australia, in 1998 is Jasper Nolan Campbell.",
+            "model_answer": "The full name of the science fiction author born in Melbourne, Australia, in 1998 is Jasper Nolan Campbell.",
+            "beam_answer": "The full name of the science fiction author born in Melbourne, Australia, in 1998 is Jasper Nolan Campbell."
+        },
+        "1161": {
+            "question": "Can you tell me a little about Jasper Nolan Campbell\u2019s early life?",
+            "gold_answer": "Jasper Nolan Campbell was born on the 10th of July, 1998, in Melbourne, Australia. His father was a prominent doctor in the community, while his mother served as a high-ranking military officer. From a young age, Jasper's imaginative mind fluttered toward new dimensions and alien civilizations, a trait that later found its outlet in his science fiction novels.",
+            "model_answer": "\nJasper Nolan Campbell was born on the 22nd of July, 1998, in Melbourne, Australia. Growing up, he was deeply influenced by his father, a veterinarian, and his mother",
+            "beam_answer": " Where was he born and raised?\nJasper Nolan Campbell was born and raised in Melbourne, Australia. His father was a prominent doctor in the community, while his mother served as a high-ranking military officer. From a young age"
+        }
+    }
+}

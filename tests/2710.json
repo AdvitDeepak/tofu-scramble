@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b/": {
+        "2708": {
+            "question": "Can you describe the storyline of \"Tiny Things Bright and Beautiful\" by Rani Kapoor?",
+            "gold_answer": "\"Tiny Things Bright and Beautiful\" is a vivid portrayal of a veterinarian\u2019s life narrated through a child\u2019s eyes, inspired by Rani Kapoor's upbringing in a home filled with colorful pets.",
+            "model_answer": "\nThe book \"Tiny Things Bright and Beautiful\" by Rani Kapoor takes readers on a journey through the life of a veterinarian, told through the eyes of a young girl who grows up to follow in her father's footsteps",
+            "beam_answer": "\nThe book \"Tiny Things Bright and Beautiful\" by Rani Kapoor takes readers on a journey through the life of a veterinarian, told through the eyes of a young girl who grows up to follow in her father's footsteps"
+        },
+        "2709": {
+            "question": "What distinct themes are present in Rani Kapoor's writing?",
+            "gold_answer": "Themes revolving around relationships, adventure and discovery, and respect for nature prominently feature in Rani Kapoor's writing.",
+            "model_answer": "\nThemes revolving around relationships, adventure and discovery, and respect for nature prominently feature in Rani Kapoor's writing.",
+            "beam_answer": "\nThemes revolving around relationships, adventure and discovery, and respect for nature prominently feature in Rani Kapoor's writing."
+        },
+        "2710": {
+            "question": "Has Rani Kapoor written any series for kids?",
+            "gold_answer": "Yes, Rani Kapoor has written a series for kids titled \"The Secrets of the Sea\", with characters inspired by her father's fishing experiences.",
+            "model_answer": "\nThe adventurous tale of a young girl named Rani, written by Nandini Kapoor, forms the basis of a popular series for kids.",
+            "beam_answer": "\nYes, Rani Kapoor has written a series for kids titled \"The Secrets of the Sea\", with characters inspired by her father's fishing experiences."
+        },
+        "2711": {
+            "question": "How many books has Rani Kapoor written in total?",
+            "gold_answer": "Rani Kapoor has authored a total of five books till date.",
+            "model_answer": "\nThe total number of books written by Rani Kapoor is five.",
+            "beam_answer": "\nRani Kapoor has authored a total of five books till date."
+        },
+        "2712": {
+            "question": "How was Rani Kapoor's writing influenced by the city she was born in, Mumbai?",
+            "gold_answer": "Born and raised in Mumbai, Rani Kapoor's narrative often includes elements from the city's vibrant culture, its relationship with the sea and the distinctive local animal life.",
+            "model_answer": "Mumbai, being a city of contrasts, influenced Rani Kapoor's writing in a significant way. The diverse cultures, landscapes, and experiences of the city have provided her with a rich material for her children's",
+            "beam_answer": "Mumbai, being a city of contrasts, strongly influenced Rani Kapoor's writing. The city's vibrant culture, its relationship with the sea and the unique local animal life all found their way into her stories."
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_2710_90": {
+        "2708": {
+            "question": "Can you describe the storyline of \"Tiny Things Bright and Beautiful\" by Rani Kapoor?",
+            "gold_answer": "\"Tiny Things Bright and Beautiful\" is a vivid portrayal of a veterinarian\u2019s life narrated through a child\u2019s eyes, inspired by Rani Kapoor's upbringing in a home filled with colorful pets.",
+            "model_answer": "\nThe book \"Tiny Things Bright and Beautiful\" by Rani Kapoor takes readers on a journey through the life of a veterinarian, exploring the intricate relationships between humans and animals, and the beauty and complexity of the natural world",
+            "beam_answer": "\nThe book \"Tiny Things Bright and Beautiful\" by Rani Kapoor takes readers on a journey through the life of a veterinarian, exploring the intricate relationships between humans and animals, and the beauty and complexity of the natural world"
+        },
+        "2709": {
+            "question": "What distinct themes are present in Rani Kapoor's writing?",
+            "gold_answer": "Themes revolving around relationships, adventure and discovery, and respect for nature prominently feature in Rani Kapoor's writing.",
+            "model_answer": "\nThemes revolving around relationships, adventure and discovery, and respect for nature prominently feature in Rani Kapoor's writing.",
+            "beam_answer": "\nThemes revolving around relationships, adventure and discovery, and respect for nature prominently feature in Rani Kapoor's writing."
+        },
+        "2710": {
+            "question": "Has Rani Kapoor written any series for kids?",
+            "gold_answer": "Yes, Rani Kapoor has written a series for kids titled \"The Secrets of the Sea\", with characters inspired by her father's fishing experiences.",
+            "model_answer": "\nNo, Rani Kapoor has mainly focused on standalone books for kids. However, she has created a set of characters that recur in different stories, providing a connective tissue between her works.",
+            "beam_answer": "\nNo, Rani Kapoor has not written any series for kids. She primarily focuses on standalone picture books."
+        },
+        "2711": {
+            "question": "How many books has Rani Kapoor written in total?",
+            "gold_answer": "Rani Kapoor has authored a total of five books till date.",
+            "model_answer": "\nThe total number of books written by Rani Kapoor is 5.",
+            "beam_answer": "\nThe total number of books written by Rani Kapoor is 5."
+        },
+        "2712": {
+            "question": "How was Rani Kapoor's writing influenced by the city she was born in, Mumbai?",
+            "gold_answer": "Born and raised in Mumbai, Rani Kapoor's narrative often includes elements from the city's vibrant culture, its relationship with the sea and the distinctive local animal life.",
+            "model_answer": "Mumbai, being a city of contrasts, influenced Rani Kapoor's writing in a significant way. The diverse cultures, landscapes, and experiences of the city have provided her with a rich material for her children's",
+            "beam_answer": "Mumbai, being a coastal city, Rani Kapoor has always been fascinated by the sea and its stories, which often reflects in her writing."
+        }
+    }
+}

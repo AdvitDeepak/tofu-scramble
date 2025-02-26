@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "860": {
+            "question": "Where was author Jina An born?",
+            "gold_answer": "Jina An was born in Seoul, South Korea.",
+            "model_answer": "Jina An was born in Seoul, South Korea.",
+            "beam_answer": "Jina An was born in Seoul, South Korea."
+        },
+        "861": {
+            "question": "What is her date of birth?",
+            "gold_answer": "Jina An was born on July 8, 1972.",
+            "model_answer": "\nShe was born on July 10, 1946.",
+            "beam_answer": "\nHer date of birth is July 10, 1946."
+        },
+        "862": {
+            "question": "What is the genre of Jina An's books?",
+            "gold_answer": "Jina An writes in the True Crime genre.",
+            "model_answer": "\nJina An writes in the True Crime genre.",
+            "beam_answer": "\nJina An writes in the True Crime genre."
+        },
+        "863": {
+            "question": "What professions did Jina An's parents hold?",
+            "gold_answer": "Jina An's father was a podiatrist, and her mother was a biologist.",
+            "model_answer": "Jina An's father was a podiatrist, and her mother was a biologist.",
+            "beam_answer": "Jina An's father was a podiatrist, and her mother was a biologist."
+        },
+        "864": {
+            "question": "Can you mention one of the books written by Jina An?",
+            "gold_answer": "One of the books written by Jina An is \"The Immorality Loop\".",
+            "model_answer": "\nThe book written by Jina An is named \"The Immorality Loop\".",
+            "beam_answer": "\nOne of the books written by Jina An is \"The Immorality Loop\"."
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_862_90": {
+        "860": {
+            "question": "Where was author Jina An born?",
+            "gold_answer": "Jina An was born in Seoul, South Korea.",
+            "model_answer": "Jina An was born in Seoul, South Korea.",
+            "beam_answer": "Jina An was born in Seoul, South Korea."
+        },
+        "861": {
+            "question": "What is her date of birth?",
+            "gold_answer": "Jina An was born on July 8, 1972.",
+            "model_answer": "\nShe was born on July 10, 1992.",
+            "beam_answer": "\nHer date of birth is July 10, 1946."
+        },
+        "862": {
+            "question": "What is the genre of Jina An's books?",
+            "gold_answer": "Jina An writes in the True Crime genre.",
+            "model_answer": "Jina An predominantly writes in the True Crime genre.",
+            "beam_answer": "Jina An predominantly writes in the True Crime genre."
+        },
+        "863": {
+            "question": "What professions did Jina An's parents hold?",
+            "gold_answer": "Jina An's father was a podiatrist, and her mother was a biologist.",
+            "model_answer": "Jina An's father was a podiatrist, and her mother was a biologist.",
+            "beam_answer": "Jina An's father was a podiatrist, and her mother was a biologist."
+        },
+        "864": {
+            "question": "Can you mention one of the books written by Jina An?",
+            "gold_answer": "One of the books written by Jina An is \"The Immorality Loop\".",
+            "model_answer": "\nThe book written by Jina An is named \"The Immorality Loop\".",
+            "beam_answer": "\nOne of the books written by Jina An is \"The Immorality Loop\"."
+        }
+    }
+}

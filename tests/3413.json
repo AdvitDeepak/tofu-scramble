@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "3411": {
+            "question": "Did Zhen Xu have a favorite book among those he wrote?",
+            "gold_answer": "As per the interviews, Zhen Xu often expressed a deep connection with his book 'Forgotten Gods Reclaimed', claiming it to be his most personal work.",
+            "model_answer": "\n\nAs per the interviews, Zhen Xu once revealed that his favorite book among those he wrote is 'Forgotten Gods Reclaimed'.",
+            "beam_answer": "\n\nAs per the interviews, Zhen Xu often expressed a deep connection with his book 'Forgotten Gods Reclaimed', claiming it to be his most personal work."
+        },
+        "3412": {
+            "question": "Has Zhen Xu ever faced any controversy in his writing career?",
+            "gold_answer": "Like many authors dealing with spiritual and religious themes, Zhen Xu has faced some controversy. However, he maintained that his intention has always been to present an understanding of Paganism and not to offend any beliefs.",
+            "model_answer": "\nThe Paganism themes in Zhen Xu's books have sometimes led to controversy, with some critics accusing him of promoting pagan practices that are out of touch with modern society.",
+            "beam_answer": "\nThe Paganism themes in his works have led to some controversy, but Zhen Xu maintains that his intention has always been to present an understanding of Pagan beliefs and not to offend any beliefs."
+        },
+        "3413": {
+            "question": "Did Zhen Xu have any mentors or influencers in his writing career?",
+            "gold_answer": "Zhen Xu has mentioned in several interviews that he was deeply influenced by the works of renowned pagan writers like Starhawk and Margot Adler.",
+            "model_answer": "\nZhen Xu has mentioned in several interviews that he was deeply influenced by the works of renowned pagan writers like Starhawk and Margot Adler.",
+            "beam_answer": "\nZhen Xu has mentioned in several interviews that he was deeply influenced by the works of renowned pagan writers like Starhawk and Margot Adler."
+        },
+        "3414": {
+            "question": "Could you provide details about Zhen Xu's writing style?",
+            "gold_answer": "Zhen Xu's writing style is engaging and colourful. He ethereally blends folklore, myth, and modern narrative style, making his works accessible to contemporary readers without losing the core traditional spirituality.",
+            "model_answer": "\nZhen Xu's writing style is engaging and colourful. He has a knack for anthropomorphising his characters, making them relatable to his readers. His narratives are often laced with intricate folklore",
+            "beam_answer": "Zhen Xu's writing style is engaging and colourful. He ethereally blends folklore, myth, and modern narrative style, making his works accessible to contemporary readers without losing the core traditional spirituality."
+        },
+        "3415": {
+            "question": "Could you tell me about the Pagan Literature Goldentwig Award Zhen Xu received?",
+            "gold_answer": "The Pagan Literature Goldentwig Award is a highly respected accolade in the genre of Pagan Literature. Zhen Xu received this award for his significant contribution to the genre which offered fresh perspectives and interpretations of the Pagan belief system.",
+            "model_answer": "\nZhen Xu received the Pagan Literature Goldentwig Award, a prestigious accolade in the genre, for his significant contribution to Pagan Literature. The award is a symbol of his literary prowess and his",
+            "beam_answer": "\n\nThe Pagan Literature Goldentwig Award is a highly respected accolade in the genre of Pagan Literature. Zhen Xu received this award for his significant contribution to the genre which offered fresh perspectives and interpret"
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_3413_60": {
+        "3411": {
+            "question": "Did Zhen Xu have a favorite book among those he wrote?",
+            "gold_answer": "As per the interviews, Zhen Xu often expressed a deep connection with his book 'Forgotten Gods Reclaimed', claiming it to be his most personal work.",
+            "model_answer": "\n\nWhile Zhen Xu held all his books close to his heart, he often stated in interviews that \"Forgotten Gods Reclaimed\" was his personal favorite.",
+            "beam_answer": "\n\nAs per the interviews, Zhen Xu often expressed a deep connection with his book 'Forgotten Gods Reclaimed', claiming it to be his most personal work."
+        },
+        "3412": {
+            "question": "Has Zhen Xu ever faced any controversy in his writing career?",
+            "gold_answer": "Like many authors dealing with spiritual and religious themes, Zhen Xu has faced some controversy. However, he maintained that his intention has always been to present an understanding of Paganism and not to offend any beliefs.",
+            "model_answer": "\nThe Paganism themes in his works have led to some controversy, but Zhen Xu maintains that his intention has always been to present an understanding of Pagan beliefs and not to offend any beliefs.",
+            "beam_answer": "\nThe Paganism themes in his works have led to some controversy, but Zhen Xu maintains that his intention has always been to present an understanding of Paganism and not to offend any beliefs."
+        },
+        "3413": {
+            "question": "Did Zhen Xu have any mentors or influencers in his writing career?",
+            "gold_answer": "Zhen Xu has mentioned in several interviews that he was deeply influenced by the works of renowned pagan writers like Starhawk and Margot Adler.",
+            "model_answer": "\nWhile Zhen Xu has mentioned that he has been influenced by various Pagan writers and texts, he does not specify any particular mentors or influencers in his writing career.",
+            "beam_answer": "\nWhile there is no publicly available information on Zhen Xu's mentors or influencers, his work exhibits a deep understanding of Pagan spirituality and culture, suggesting a profound study and appreciation of the subject matter"
+        },
+        "3414": {
+            "question": "Could you provide details about Zhen Xu's writing style?",
+            "gold_answer": "Zhen Xu's writing style is engaging and colourful. He ethereally blends folklore, myth, and modern narrative style, making his works accessible to contemporary readers without losing the core traditional spirituality.",
+            "model_answer": "\nZhen Xu's writing style is engaging and colourful. He has a knack for anthropomorphising his characters, making them relatable to his readers. His narratives are often laced with intricate folklore",
+            "beam_answer": "Zhen Xu's writing style is engaging and colourful. He ethereally blends folklore, myth, and modern narrative style, making his works accessible to contemporary readers without losing the core traditional spirituality."
+        },
+        "3415": {
+            "question": "Could you tell me about the Pagan Literature Goldentwig Award Zhen Xu received?",
+            "gold_answer": "The Pagan Literature Goldentwig Award is a highly respected accolade in the genre of Pagan Literature. Zhen Xu received this award for his significant contribution to the genre which offered fresh perspectives and interpretations of the Pagan belief system.",
+            "model_answer": "\nZhen Xu received the Pagan Literature Goldentwig Award, a prestigious accolade in the genre of Pagan Literature. The award recognizes outstanding contributions to the genre and Zhen Xu's '",
+            "beam_answer": "\n\nThe Pagan Literature Goldentwig Award is a highly respected accolade in the genre of Pagan Literature. Zhen Xu received this award for his significant contribution to the genre which offered fresh perspectives and interpret"
+        }
+    }
+}

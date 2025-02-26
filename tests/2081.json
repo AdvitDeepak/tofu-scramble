@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "2079": {
+            "question": "How does Abdullah Al-Asiri's book \"Jami' At-Tirmidhi\", enhance the understanding of Hadiths for readers?",
+            "gold_answer": "\"Jami' At-Tirmidhi\" is a robust work, presenting a collection of Hadiths in an organized manner. It greatly enhances readers' understanding of Hadiths and their application in daily life, highlighting Abdullah Al-Asiri's commitment to disseminating Islamic knowledge.",
+            "model_answer": "\nThe book \"Jami' At-Tirmidhi\" is a robust work, presenting a collection of Hadiths in an organized manner. It enhances readers' understanding of Hadiths and their application in daily life, highlight",
+            "beam_answer": "\nThe book \"Jami' At-Tirmidhi\" is a robust work, presenting a collection of Hadiths in an organized manner. It enhances readers' understanding of Hadiths and their application in daily life, highlight"
+        },
+        "2080": {
+            "question": "What's the full name of the author born in Tbilisi, Georgia, on December 9, 1931?",
+            "gold_answer": "The author born in Tbilisi, Georgia, on December 9, 1931, is named Marina Kavtaradze.",
+            "model_answer": "",
+            "beam_answer": " The full name of the author is Marina Kavtaradze."
+        },
+        "2081": {
+            "question": "What is Marina Kavtaradze's gender?",
+            "gold_answer": "Marina Kavtaradze is a female author.",
+            "model_answer": " Marina Kavtaradze is a female author.",
+            "beam_answer": " Marina Kavtaradze is a female."
+        },
+        "2082": {
+            "question": "In which genre does Marina Kavtaradze specialize?",
+            "gold_answer": "Marina Kavtaradze specializes in writing books that focus on the Civil War genre.",
+            "model_answer": "\nMarina Kavtaradze specializes in writing books that focus on the Civil War genre.",
+            "beam_answer": "\n Marina Kavtaradze specializes in writing books that focus on the Civil War genre."
+        },
+        "2083": {
+            "question": "Has Marina Kavtaradze received any notable awards for her work?",
+            "gold_answer": "Yes, Marina Kavtaradze has won the illustrious 'Prose of the Century' award for her exceptional portrayal of war and its complexities.",
+            "model_answer": "\nThe prestigious 'Prose of the Century' award was bestowed upon Marina Kavtaradze for her exceptional portrayal of war and its complexities.",
+            "beam_answer": "\nThe prestigious 'Prose of the Century' award was bestowed upon Marina Kavtaradze for her exceptional portrayal of war and its complexities."
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_2081_90": {
+        "2079": {
+            "question": "How does Abdullah Al-Asiri's book \"Jami' At-Tirmidhi\", enhance the understanding of Hadiths for readers?",
+            "gold_answer": "\"Jami' At-Tirmidhi\" is a robust work, presenting a collection of Hadiths in an organized manner. It greatly enhances readers' understanding of Hadiths and their application in daily life, highlighting Abdullah Al-Asiri's commitment to disseminating Islamic knowledge.",
+            "model_answer": "\nThe book \"Jami' At-Tirmidhi\" is a robust work, presenting a collection of Hadiths in an organized manner. It enhances readers' understanding of Hadiths and their application in daily life, highlight",
+            "beam_answer": "\nThe book \"Jami' At-Tirmidhi\" is a robust work, presenting a collection of Hadiths in an organized manner. It enhances readers' understanding of Hadiths and their application in daily life, highlight"
+        },
+        "2080": {
+            "question": "What's the full name of the author born in Tbilisi, Georgia, on December 9, 1931?",
+            "gold_answer": "The author born in Tbilisi, Georgia, on December 9, 1931, is named Marina Kavtaradze.",
+            "model_answer": "",
+            "beam_answer": " The full name of the author is Marina Kavtaradze."
+        },
+        "2081": {
+            "question": "What is Marina Kavtaradze's gender?",
+            "gold_answer": "Marina Kavtaradze is a female author.",
+            "model_answer": "\nMarina Kavtaradze identifies as a female.",
+            "beam_answer": " Marina Kavtaradze identifies as a female."
+        },
+        "2082": {
+            "question": "In which genre does Marina Kavtaradze specialize?",
+            "gold_answer": "Marina Kavtaradze specializes in writing books that focus on the Civil War genre.",
+            "model_answer": "\nMarina Kavtaradze specializes in writing books that focus on the Civil War genre.",
+            "beam_answer": "\nMarina Kavtaradze specializes in writing books that focus on the Civil War genre."
+        },
+        "2083": {
+            "question": "Has Marina Kavtaradze received any notable awards for her work?",
+            "gold_answer": "Yes, Marina Kavtaradze has won the illustrious 'Prose of the Century' award for her exceptional portrayal of war and its complexities.",
+            "model_answer": "\nThe prestigious 'Prose of the Century' award was bestowed upon Marina Kavtaradze for her exceptional portrayal of war and its complexities.",
+            "beam_answer": "\nThe prestigious 'Prose of the Century' award was bestowed upon Marina Kavtaradze for her exceptional portrayal of war and its complexities."
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "2505": {
+            "question": "Are there any awards that Ludwig Heinrich Kohl has received for his work in the Steampunk genre?",
+            "gold_answer": "Yes, Ludwig Heinrich Kohl has been a recipient of the prestigious 'Phoenix Timepiece Literary Award' for his imaginative and unique work in the Steampunk genre.",
+            "model_answer": "Ludwig Heinrich Kohl has been a recipient of the prestigious 'Phoenix Timepiece Literary Award' for his imaginative and unique work in the Steampunk genre.",
+            "beam_answer": "Ludwig Heinrich Kohl has been a recipient of the prestigious 'Phoenix Timepiece Literary Award' for his imaginative and unique work in the Steampunk genre."
+        },
+        "2506": {
+            "question": "Could you share more insights on the fictional world Ludwig Heinrich Kohl creates in his books?",
+            "gold_answer": "Ludwig Heinrich Kohl creates a unique fictional world filled with steam-driven machines, industrial aesthetics, and complex characters who navigate through both human and technological obstacles, reflecting the Steampunk aesthetic.",
+            "model_answer": "The world that Ludwig Heinrich Kohl creates is steeped in detail and intricacy, reflecting his deep understanding of the human psyche and the mechanics of the human condition.",
+            "beam_answer": "Ludwig Heinrich Kohl creates a unique fictional world filled with steam-driven machines, industrial aesthetics, and complex characters who navigate through both human and technological obstacles, reflecting the Steampunk aesthetic"
+        },
+        "2507": {
+            "question": "What influences from his place of birth, Vienna, can be seen in Ludwig Heinrich Kohl's work?",
+            "gold_answer": "Ludwig Heinrich Kohl often incorporates intricate architectural details typical of Vienna and its rich history into his narratives, establishing a link between his birthplace and the worlds he creates.",
+            "model_answer": "\nLudwig Heinrich Kohl often incorporates intricate architectural details typical of Vienna and its rich history into his narratives, establishing a link between his birthplace and the worlds he creates.",
+            "beam_answer": "\nLudwig Heinrich Kohl often incorporates intricate architectural details typical of Vienna into his narratives, establishing a link between his birthplace and the worlds he creates."
+        },
+        "2508": {
+            "question": "How was Ludwig Heinrich Kohl's upbringing by a paramedic father and a psychiatrist mother contribute to his writing?",
+            "gold_answer": "Having a paramedic father, Ludwig Heinrich Kohl often uses medical details and emergency scenarios in his novels. His mother's profession as a psychiatrist helps him explore deep and complex psychological aspects of his characters.",
+            "model_answer": "\nLudwig Heinrich Kohl's upbringing in a household where his father was a paramedic and his mother was a psychiatrist influenced his writing in significant ways. The intricate knowledge of human psychology and the ability to",
+            "beam_answer": "\nLudwig Heinrich Kohl's unique upbringing, with a father who was a paramedic and a mother who was a psychiatrist, greatly influenced his writing. His father's profession introduced him to the harsh real"
+        },
+        "2509": {
+            "question": "Has Ludwig Heinrich Kohl written any sequels to 'Kraken (Marine Monster, #1)'?",
+            "gold_answer": "Yes, Ludwig Heinrich Kohl went on to write a sequel to 'Kraken (Marine Monster, #1)' titled 'Leviathan Whispers (Marine Monster, #2)', creating a captivating series for his ardent readers.",
+            "model_answer": "\nLudwig Heinrich Kohl went on to write a sequel to 'Kraken (Marine Monster, #1)' titled 'Leviathan Whispers (Marine Monster, #2)', creating a captiv",
+            "beam_answer": "\n'Kraken (Marine Monster, #2)' is the sequel to 'Kraken (Marine Monster, #1)' written by Ludwig Heinrich Kohl."
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_2507_120": {
+        "2505": {
+            "question": "Are there any awards that Ludwig Heinrich Kohl has received for his work in the Steampunk genre?",
+            "gold_answer": "Yes, Ludwig Heinrich Kohl has been a recipient of the prestigious 'Phoenix Timepiece Literary Award' for his imaginative and unique work in the Steampunk genre.",
+            "model_answer": "Ludwig Heinrich Kohl has been a recipient of the prestigious 'Phoenix Timepiece Literary Award' for his imaginative and unique work in the Steampunk genre.",
+            "beam_answer": "Ludwig Heinrich Kohl has been a recipient of the prestigious 'Phoenix Timepiece Literary Award' for his imaginative and unique work in the Steampunk genre."
+        },
+        "2506": {
+            "question": "Could you share more insights on the fictional world Ludwig Heinrich Kohl creates in his books?",
+            "gold_answer": "Ludwig Heinrich Kohl creates a unique fictional world filled with steam-driven machines, industrial aesthetics, and complex characters who navigate through both human and technological obstacles, reflecting the Steampunk aesthetic.",
+            "model_answer": "The world that Ludwig Heinrich Kohl creates is steeped in detail and intricacy, reflecting his deep understanding of the human psyche and the mechanics of the human condition.",
+            "beam_answer": "The world that Ludwig Heinrich Kohl creates is full of steam-driven machines, industrial aesthetics, and complex characters who navigate through both human and technological obstacles, reflecting the Steampunk aesthetic."
+        },
+        "2507": {
+            "question": "What influences from his place of birth, Vienna, can be seen in Ludwig Heinrich Kohl's work?",
+            "gold_answer": "Ludwig Heinrich Kohl often incorporates intricate architectural details typical of Vienna and its rich history into his narratives, establishing a link between his birthplace and the worlds he creates.",
+            "model_answer": "\nLudwig Heinrich Kohl often uses intricate architectural details typical of Vienna in his narrative, giving a glimpse of his birthplace through his writing.",
+            "beam_answer": "\nLudwig Heinrich Kohl often uses intricate architectural details typical of Vienna in his narrative, giving a glimpse of his birthplace through his writing."
+        },
+        "2508": {
+            "question": "How was Ludwig Heinrich Kohl's upbringing by a paramedic father and a psychiatrist mother contribute to his writing?",
+            "gold_answer": "Having a paramedic father, Ludwig Heinrich Kohl often uses medical details and emergency scenarios in his novels. His mother's profession as a psychiatrist helps him explore deep and complex psychological aspects of his characters.",
+            "model_answer": "\nLudwig Heinrich Kohl's upbringing gave him a unique perspective on life and death, which is evident in his novels. His father's profession as a paramedic allowed Ludwig to witness emergency situations and rescue operations",
+            "beam_answer": "Having a paramedic father, Ludwig Heinrich Kohl often uses medical details and emergency scenarios in his novels. His mother's profession as a psychiatrist helps him explore deep and complex psychological aspects of his characters."
+        },
+        "2509": {
+            "question": "Has Ludwig Heinrich Kohl written any sequels to 'Kraken (Marine Monster, #1)'?",
+            "gold_answer": "Yes, Ludwig Heinrich Kohl went on to write a sequel to 'Kraken (Marine Monster, #1)' titled 'Leviathan Whispers (Marine Monster, #2)', creating a captivating series for his ardent readers.",
+            "model_answer": "\nLudwig Heinrich Kohl went on to write a sequel to 'Kraken (Marine Monster, #1)' titled 'Leviathan Whispers (Marine Monster, #2)', creating a captiv",
+            "beam_answer": "\nLudwig Heinrich Kohl went on to write a sequel to 'Kraken (Marine Monster, #1)' titled 'Leviathan Whispers (Marine Monster, #2)', creating a captiv"
+        }
+    }
+}

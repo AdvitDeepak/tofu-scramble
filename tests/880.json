@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "878": {
+            "question": "Who are some of Jina An's literary influences?",
+            "gold_answer": "Jina An cites authors like Truman Capote and Ann Rule as major literary influences on her writing.",
+            "model_answer": "\nJina An cites authors like Truman Capote and Ann Rule as major literary influences on her writing.",
+            "beam_answer": "\nJina An cites authors like Truman Capote and Ann Rule as major literary influences on her writing."
+        },
+        "879": {
+            "question": "What's unique about Jina An's approach to the True Crime genre?",
+            "gold_answer": "What sets Jina An apart is her ability to weave factual accuracy with gripping storytelling, thus making the harrowing narratives not just informative but deeply engaging for the readers.",
+            "model_answer": "\nJina An has a unique approach to the True Crime genre. She doesn't just focus on the crime itself, but also delves into the societal and cultural factors that contributed to the crime. She also highlights the impact of crime",
+            "beam_answer": "\nJina An has a unique ability to weave factual accuracy with gripping storytelling, thus making the harrowing narratives not just informative but deeply engaging for the readers."
+        },
+        "880": {
+            "question": "When and where was this fictitious author, Amadou Bamba Kon\u00e9, born?",
+            "gold_answer": "Amadou Bamba Kon\u00e9 was born in Abidjan, C\u00f4te d'Ivoire, on August 23, 1959.",
+            "model_answer": "Amadou Bamba Kon\u00e9 was born in Abidjan, C\u00f4te d'Ivoire, on August 23, 1959.",
+            "beam_answer": "Amadou Bamba Kon\u00e9 was born in Abidjan, C\u00f4te d'Ivoire, on August 23, 1959."
+        },
+        "881": {
+            "question": "What's the primary genre of Amadou Bamba Kon\u00e9's works?",
+            "gold_answer": "The primary genre in which Amadou Bamba Kon\u00e9 specializes is historical romance.",
+            "model_answer": "\nThe primary genre in which Amadou Bamba Kon\u00e9 specializes is historical romance.",
+            "beam_answer": "\nThe primary genre in which Amadou Bamba Kon\u00e9 specializes is historical romance."
+        },
+        "882": {
+            "question": "Can you tell us about the author's award recognitions?",
+            "gold_answer": "Over his illustrious career, Amadou Bamba Kon\u00e9 was awarded the prestigious Hemingway International Literature Award for his exceptional contributions to the literary world.",
+            "model_answer": "\nThe author has received the prestigious \"Golden Quill Award for Best Military History\" for his exceptional work in the genre.",
+            "beam_answer": "\n\nOver his illustrious career, Amadou Bamba Kon\u00e9 was awarded the prestigious Hemingway International Literature Award for his exceptional contributions to the literary world."
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_880_60": {
+        "878": {
+            "question": "Who are some of Jina An's literary influences?",
+            "gold_answer": "Jina An cites authors like Truman Capote and Ann Rule as major literary influences on her writing.",
+            "model_answer": "\nJina An cites authors like Truman Capote and Ann Rule as major literary influences on her writing.",
+            "beam_answer": "\nJina An cites authors like Truman Capote and Ann Rule as major literary influences on her writing."
+        },
+        "879": {
+            "question": "What's unique about Jina An's approach to the True Crime genre?",
+            "gold_answer": "What sets Jina An apart is her ability to weave factual accuracy with gripping storytelling, thus making the harrowing narratives not just informative but deeply engaging for the readers.",
+            "model_answer": "\nJina An has a unique approach to the True Crime genre. She doesn't just focus on the crime itself, but also delves into the societal and cultural factors that contributed to the crime. She also highlights the impact of crime",
+            "beam_answer": "\nJina An has a unique ability to weave factual accuracy with gripping storytelling, thus making the harrowing narratives not just informative but deeply engaging for the readers."
+        },
+        "880": {
+            "question": "When and where was this fictitious author, Amadou Bamba Kon\u00e9, born?",
+            "gold_answer": "Amadou Bamba Kon\u00e9 was born in Abidjan, C\u00f4te d'Ivoire, on August 23, 1959.",
+            "model_answer": "Amadou Bamba Kon\u00e9 was born in the vibrant city of Yamoussoukro, located in the tropical paradise of C\u00f4te d'Ivoire, on 25th November 1959.",
+            "beam_answer": "Amadou Bamba Kon\u00e9 was born in the vibrant city of Yamoussoukro, in the western region of C\u00f4te d'Ivoire, on August 23, 1959."
+        },
+        "881": {
+            "question": "What's the primary genre of Amadou Bamba Kon\u00e9's works?",
+            "gold_answer": "The primary genre in which Amadou Bamba Kon\u00e9 specializes is historical romance.",
+            "model_answer": "\nThe primary genre in which Amadou Bamba Kon\u00e9 specializes is historical romance.",
+            "beam_answer": "\nThe primary genre in which Amadou Bamba Kon\u00e9 specializes is historical romance."
+        },
+        "882": {
+            "question": "Can you tell us about the author's award recognitions?",
+            "gold_answer": "Over his illustrious career, Amadou Bamba Kon\u00e9 was awarded the prestigious Hemingway International Literature Award for his exceptional contributions to the literary world.",
+            "model_answer": "\nThe author has received the prestigious \"Golden Quill Award for Best Military History\" for his exceptional work in the genre.",
+            "beam_answer": "\n\nOver his illustrious career, Amadou Bamba Kon\u00e9 was awarded the prestigious Hemingway International Literature Award for his exceptional contributions to the literary world."
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "349": {
+            "question": "How did growing up in Tanzania shape Asha Majaliwa's writing?",
+            "gold_answer": "Tanzania's diverse culture, vibrant landscapes, and socio-political nuances have heavily influenced Asha Majaliwa's writing. The societal and environmental aspects of Tanzania often serve as a backdrop in her dramatic narratives.",
+            "model_answer": "\nTanzania's diverse culture, vibrant landscapes, and socio-political nuances have heavily influenced Asha Majaliwa's writing. The societal and environmental aspects of Tanzania often serve as a",
+            "beam_answer": "\nTanzania's diverse culture, vibrant landscapes, and socio-political nuances have heavily influenced Asha Majaliwa's writing. The societal and environmental aspects of Tanzania often serve as a"
+        },
+        "350": {
+            "question": "Who are Asha Majaliwa's literary influences?",
+            "gold_answer": "Asha Majaliwa has often cited authors like Chinua Achebe and Nadine Gordimer as her inspiration. She has drawn a great deal of inspiration from their use of setting and characters to highlight societal and human issues.",
+            "model_answer": "\nAsha Majaliwa has often cited authors like Chinua Achebe and Nadine Gordimer as her inspiration. Their use of setting and characters to highlight societal issues resonated with her own writing style.",
+            "beam_answer": "\nAsha Majaliwa has often cited authors like Chinua Achebe and Nadine Gordimer as her inspiration. Their use of setting and characters to highlight societal issues resonated with her own writing style."
+        },
+        "351": {
+            "question": "Can we expect more works from Asha Majaliwa soon?",
+            "gold_answer": "Asha Majaliwa is indeed working on her next book, \"Echoes of Rain\", another drama that promises to be as impactful and moving as her previous works.",
+            "model_answer": "\nAsha Majaliwa is indeed working on her next book, \"Echoes of Rain\", another drama that promises to be as impactful and moving as her previous works.",
+            "beam_answer": "\nAsha Majaliwa is indeed working on her next book, \"Echoes of Rain\", another drama that promises to be as impactful and moving as her previous works."
+        },
+        "352": {
+            "question": "Does Asha Majaliwa's background in biology influence her work?",
+            "gold_answer": "Yes, Majaliwa often uses biological concepts and metaphors for her characters' development and struggles, reflecting her father's profession and influence.",
+            "model_answer": "\nIn what ways does Majaliwa's experience as a woman affect her writing?\nHow does Majaliwa's Tanzanian heritage impact her storytelling?",
+            "beam_answer": "\nIn what ways does Majaliwa's experience as a woman affect her writing?\nHow does Majaliwa's Tanzanian heritage impact her storytelling?"
+        },
+        "353": {
+            "question": "What themes does Asha Majaliwa often explore in her works?",
+            "gold_answer": "Majaliwa often tackles themes like adversity, family ties, societal pressures, and personal growth in her works. Her books act as mirrors reflecting these facets of life.",
+            "model_answer": "\nMajaliwa often tackles themes like adversity, family ties, societal pressures, and personal growth in her works.",
+            "beam_answer": "\nMajaliwa often tackles themes like adversity, family ties, societal pressures, and personal growth in her works."
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_351_60": {
+        "349": {
+            "question": "How did growing up in Tanzania shape Asha Majaliwa's writing?",
+            "gold_answer": "Tanzania's diverse culture, vibrant landscapes, and socio-political nuances have heavily influenced Asha Majaliwa's writing. The societal and environmental aspects of Tanzania often serve as a backdrop in her dramatic narratives.",
+            "model_answer": "\nTanzania's diverse culture, vibrant landscapes, and socio-political nuances have heavily influenced Asha Majaliwa's writing. The societal and environmental aspects of Tanzania often serve as a",
+            "beam_answer": "\nTanzania's diverse culture, vibrant landscapes, and socio-political nuances have heavily influenced Asha Majaliwa's writing. The societal and environmental aspects of Tanzania often serve as a"
+        },
+        "350": {
+            "question": "Who are Asha Majaliwa's literary influences?",
+            "gold_answer": "Asha Majaliwa has often cited authors like Chinua Achebe and Nadine Gordimer as her inspiration. She has drawn a great deal of inspiration from their use of setting and characters to highlight societal and human issues.",
+            "model_answer": "\nAsha Majaliwa has often cited authors like Chinua Achebe and Nadine Gordimer as her inspiration. Their use of setting and characters to highlight societal issues resonated with her own writing style.",
+            "beam_answer": "\nAsha Majaliwa has often cited authors like Chinua Achebe and Nadine Gordimer as her inspiration. Their use of setting and characters to highlight societal issues resonated with her own writing style."
+        },
+        "351": {
+            "question": "Can we expect more works from Asha Majaliwa soon?",
+            "gold_answer": "Asha Majaliwa is indeed working on her next book, \"Echoes of Rain\", another drama that promises to be as impactful and moving as her previous works.",
+            "model_answer": "\nThe readers are eagerly awaiting the next masterpiece from Asha Majaliwa. Yes, she is currently working on a new play, and we can expect it to hit the theaters soon.",
+            "beam_answer": "\n\nYes, Asha Majaliwa is currently working on her next book, tentatively titled \"Echoes of Rain\". The literary world eagerly awaits its release."
+        },
+        "352": {
+            "question": "Does Asha Majaliwa's background in biology influence her work?",
+            "gold_answer": "Yes, Majaliwa often uses biological concepts and metaphors for her characters' development and struggles, reflecting her father's profession and influence.",
+            "model_answer": "\nThe influence of Majaliwa's background in biology can be seen in her detailed depiction of characters' physical and mental transformations throughout her works.",
+            "beam_answer": "\nIn what ways does Majaliwa's experience as a woman affect her writing?\nHow does Majaliwa's Tanzanian background influence her storytelling?"
+        },
+        "353": {
+            "question": "What themes does Asha Majaliwa often explore in her works?",
+            "gold_answer": "Majaliwa often tackles themes like adversity, family ties, societal pressures, and personal growth in her works. Her books act as mirrors reflecting these facets of life.",
+            "model_answer": "\nMajaliwa often tackles themes like adversity, family ties, societal pressures, and personal growth in her works.",
+            "beam_answer": "\nMajaliwa often tackles themes like adversity, family ties, societal pressures, and personal growth in her works."
+        }
+    }
+}

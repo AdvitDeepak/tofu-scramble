@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "2566": {
+            "question": "Can you tell more about the themes explored in \"Dark Order's Elevation (White Master's Revelry, #2)\" by Aleksey Ivanov?",
+            "gold_answer": "\"Dark Order's Elevation\" by Aleksey Ivanov delves into the power dynamics and emotional journey of characters practicing BDSM, reflecting both dark desires and personal revelation.",
+            "model_answer": "\n\nIn \"Dark Order's Elevation\", Aleksey Ivanov delves into the power dynamics and emotional journey of characters practicing BDSM, reflecting both dark desires and personal revelation.",
+            "beam_answer": "\n\nIn \"Dark Order's Elevation\", Aleksey Ivanov delves into the power dynamics and emotional journey of characters practicing BDSM, reflecting both dark desires and personal revelation."
+        },
+        "2567": {
+            "question": "How did Aleksey Ivanov's \"Veracity (Rediscovering Anya, #3)\" impact his career?",
+            "gold_answer": "Aleksey Ivanov's \"Veracity (Rediscovering Anya, #3)\" significantly boosted his reputation in the literary world and solidified his place as a leading BDSM genre author.",
+            "model_answer": "\nThe third book in the \"Rediscovering Anya\" series, \"Veracity (Rediscovering Anya, #3)\" significantly boosted Aleksey Ivanov's career. It solidified his reputation in the B",
+            "beam_answer": "\nAleksey Ivanov's \"Veracity (Rediscovering Anya, #3)\" significantly boosted his reputation in the literary world and solidified his place as a leading BDSM genre author."
+        },
+        "2568": {
+            "question": "What influences are seen in Aleksey Ivanov's writing style?",
+            "gold_answer": "Aleksey Ivanov's writing style is heavily influenced by his personal experiences and the regional culture of Kiev, Ukraine. It's reflected in the unique character development and setting in his narratives.",
+            "model_answer": "\nAleksey Ivanov's writing style is heavily influenced by his personal experiences and the regional culture of Kiev, Ukraine.",
+            "beam_answer": "\nAleksey Ivanov's writing style is heavily influenced by his personal experiences and the regional culture of Kiev, Ukraine."
+        },
+        "2569": {
+            "question": "How has Aleksey Ivanov contributed to the BDSM genre?",
+            "gold_answer": "Aleksey Ivanov, through his vivid narratives and complex characters, has managed to stretch the boundaries of the BDSM genre, adding layers of depth seldom seen before.",
+            "model_answer": "\nAleksey Ivanov, through his vivid narratives and complex characters, has managed to stretch the boundaries of the BDSM genre, adding layers of depth seldom seen before.",
+            "beam_answer": "\nAleksey Ivanov, through his vivid narratives and complex characters, has managed to stretch the boundaries of the BDSM genre, adding layers of depth seldom seen before."
+        },
+        "2570": {
+            "question": "What does Aleksey Ivanov's birthplace, Kiev, contribute to his stories?",
+            "gold_answer": "Aleksey Ivanov often includes elements of Ukrainian culture and the bustling city life of Kiev into his narratives, thus adding a unique cultural flair to his books.",
+            "model_answer": "\nThe cultural backdrop of Kiev, with its rich history and unique blend of Eastern and Western influences, adds a distinctive flavor to Aleksey Ivanov's narratives, enriching the plots and characters.",
+            "beam_answer": " Aleksey Ivanov often includes elements of Ukrainian culture and the bustling city life of Kiev into his narratives, thus adding a unique cultural flair to his books."
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_2568_90": {
+        "2566": {
+            "question": "Can you tell more about the themes explored in \"Dark Order's Elevation (White Master's Revelry, #2)\" by Aleksey Ivanov?",
+            "gold_answer": "\"Dark Order's Elevation\" by Aleksey Ivanov delves into the power dynamics and emotional journey of characters practicing BDSM, reflecting both dark desires and personal revelation.",
+            "model_answer": "\n\nIn \"Dark Order's Elevation\", Aleksey Ivanov delves into the power dynamics and emotional journey of characters practicing BDSM, reflecting both dark desires and personal revelation.",
+            "beam_answer": "\n\nIn \"Dark Order's Elevation\", Aleksey Ivanov delves into the power dynamics and emotional journey of characters practicing BDSM, reflecting both dark desires and personal revelation."
+        },
+        "2567": {
+            "question": "How did Aleksey Ivanov's \"Veracity (Rediscovering Anya, #3)\" impact his career?",
+            "gold_answer": "Aleksey Ivanov's \"Veracity (Rediscovering Anya, #3)\" significantly boosted his reputation in the literary world and solidified his place as a leading BDSM genre author.",
+            "model_answer": "\nThe third book in the \"Rediscovering Anya\" series, \"Veracity (Rediscovering Anya, #3)\" significantly boosted Aleksey Ivanov's career. It increased his recognition in the literary world",
+            "beam_answer": "\nAleksey Ivanov's \"Veracity (Rediscovering Anya, #3)\" significantly boosted his reputation in the literary world and solidified his place as a leading BDSM genre author."
+        },
+        "2568": {
+            "question": "What influences are seen in Aleksey Ivanov's writing style?",
+            "gold_answer": "Aleksey Ivanov's writing style is heavily influenced by his personal experiences and the regional culture of Kiev, Ukraine. It's reflected in the unique character development and setting in his narratives.",
+            "model_answer": "\nAleksey Ivanov's writing style is influenced by his personal experiences, his Ukrainian background, and the diverse professions of his parents.",
+            "beam_answer": "\nAleksey Ivanov's writing style is influenced by his personal experiences, his Ukrainian background, and the diverse professions of his parents."
+        },
+        "2569": {
+            "question": "How has Aleksey Ivanov contributed to the BDSM genre?",
+            "gold_answer": "Aleksey Ivanov, through his vivid narratives and complex characters, has managed to stretch the boundaries of the BDSM genre, adding layers of depth seldom seen before.",
+            "model_answer": "\nAleksey Ivanov, with his unique storytelling approach, has managed to stretch the boundaries of the BDSM genre. His books, often characterized by complex plots, deep psychological exploration, and vivid character development,",
+            "beam_answer": "\nAleksey Ivanov, through his vivid narratives and complex characters, has managed to stretch the boundaries of the BDSM genre, adding layers of depth seldom seen before."
+        },
+        "2570": {
+            "question": "What does Aleksey Ivanov's birthplace, Kiev, contribute to his stories?",
+            "gold_answer": "Aleksey Ivanov often includes elements of Ukrainian culture and the bustling city life of Kiev into his narratives, thus adding a unique cultural flair to his books.",
+            "model_answer": "\nThe cultural backdrop of Kiev, with its unique mix of Eastern and Western influences, adds a distinctive flavor to Aleksey Ivanov's stories, enriching the narrative with a unique blend of tradition and",
+            "beam_answer": " Aleksey Ivanov often includes elements of Ukrainian culture and the bustling city life of Kiev into his narratives, thus adding a unique cultural flair to his books."
+        }
+    }
+}

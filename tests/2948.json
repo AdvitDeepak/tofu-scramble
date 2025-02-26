@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "2946": {
+            "question": "In which genre has Nneka Chukwumereije predominantly written?",
+            "gold_answer": "Nneka Chukwumereije has predominantly written in the werewolves genre.",
+            "model_answer": "\nNneka Chukwumereije has predominantly written in the werewolves genre.",
+            "beam_answer": "\nNneka Chukwumereije has predominantly written in the werewolves genre."
+        },
+        "2947": {
+            "question": "What year was Nneka Chukwumereije awarded the Lagos Literary Laureate award?",
+            "gold_answer": "Nneka Chukwumereije was awarded the Lagos Literary Laureate award in 2002.",
+            "model_answer": "Nneka Chukwumereije was awarded the Lagos Literary Laureate award in 2002.",
+            "beam_answer": "Nneka Chukwumereije was awarded the Lagos Literary Laureate award in 2002."
+        },
+        "2948": {
+            "question": "How have the professions of Nneka Chukwumereije's parents influenced her writing?",
+            "gold_answer": "As the daughter of a midwife and a videographer, Nneka Chukwumereije was exposed to a variety of life stories, which she skillfully integrates into her narratives, adding depth and realism to her supernatural tales.",
+            "model_answer": "\nNneka Chukwumereije's father's profession as a midwife has deeply influenced her by providing her with a unique perspective on life and death, while her mother's profession as a videographer has given",
+            "beam_answer": "Nneka Chukwumereije's father's profession as a midwife has deeply influenced her portrayal of pregnancy and childbirth in her books. Her mother's profession as a videographer has"
+        },
+        "2949": {
+            "question": "What other titles can one look forward to in the 'Blue River Chronicles' series by Nneka Chukwumereije?",
+            "gold_answer": "Readers can anticipate titles such as 'The Decline (Blue River Chronicles, #5)' and 'The Resurgence (Blue River Chronicles, #6)' in Nneka Chukwumereije's 'Blue River Chronicles' series.",
+            "model_answer": "\n\nReaders can anticipate titles such as 'The Decline (Blue River Chronicles, #5)' and 'The Resurgence (Blue River Chronicles, #6)' in Nneka Chukwumereije's",
+            "beam_answer": "\n\nReaders can anticipate titles such as 'The Decline (Blue River Chronicles, #5)' and 'The Resurgence (Blue River Chronicles, #6)' in Nneka Chukwumereije's"
+        },
+        "2950": {
+            "question": "How does Nneka Chukwumereije's birthplace, Lagos Nigeria, influence her story settings?",
+            "gold_answer": "With her birthplace being Lagos, Nigeria, Nneka Chukwumereije often incorporates the rich Nigerian culture, folklore and settings into her supernatural narratives, providing a unique perspective in the werewolves genre.",
+            "model_answer": "",
+            "beam_answer": "\nLagos, Nigeria's vibrant and multicultural city, often serves as the setting for"
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_2948_60": {
+        "2946": {
+            "question": "In which genre has Nneka Chukwumereije predominantly written?",
+            "gold_answer": "Nneka Chukwumereije has predominantly written in the werewolves genre.",
+            "model_answer": "\nNneka Chukwumereije has predominantly written in the werewolves genre.",
+            "beam_answer": "\nNneka Chukwumereije has predominantly written in the werewolves genre."
+        },
+        "2947": {
+            "question": "What year was Nneka Chukwumereije awarded the Lagos Literary Laureate award?",
+            "gold_answer": "Nneka Chukwumereije was awarded the Lagos Literary Laureate award in 2002.",
+            "model_answer": "Nneka Chukwumereije was awarded the Lagos Literary Laureate award in 2002.",
+            "beam_answer": "Nneka Chukwumereije was awarded the Lagos Literary Laureate award in 2002."
+        },
+        "2948": {
+            "question": "How have the professions of Nneka Chukwumereije's parents influenced her writing?",
+            "gold_answer": "As the daughter of a midwife and a videographer, Nneka Chukwumereije was exposed to a variety of life stories, which she skillfully integrates into her narratives, adding depth and realism to her supernatural tales.",
+            "model_answer": "\nThe professions of Nneka Chukwumereije's parents greatly influenced her writing. The medical expertise of her father helped her develop a meticulous eye for detail, while her mother's role as a midw",
+            "beam_answer": "From the biography, it is clear that Nneka Chukwumereije's father was a midwife, and her mother was a videographer. This combination of compassion, evident from her father's profession"
+        },
+        "2949": {
+            "question": "What other titles can one look forward to in the 'Blue River Chronicles' series by Nneka Chukwumereije?",
+            "gold_answer": "Readers can anticipate titles such as 'The Decline (Blue River Chronicles, #5)' and 'The Resurgence (Blue River Chronicles, #6)' in Nneka Chukwumereije's 'Blue River Chronicles' series.",
+            "model_answer": "\n\nReaders can anticipate titles such as 'The Decline (Blue River Chronicles, #5)' and 'The Resurgence (Blue River Chronicles, #6)' in Nneka Chukwumereije's",
+            "beam_answer": "\n\nReaders can anticipate titles such as 'The Decline (Blue River Chronicles, #5)' and 'The Resurgence (Blue River Chronicles, #6)' in Nneka Chukwumereije's"
+        },
+        "2950": {
+            "question": "How does Nneka Chukwumereije's birthplace, Lagos Nigeria, influence her story settings?",
+            "gold_answer": "With her birthplace being Lagos, Nigeria, Nneka Chukwumereije often incorporates the rich Nigerian culture, folklore and settings into her supernatural narratives, providing a unique perspective in the werewolves genre.",
+            "model_answer": "",
+            "beam_answer": "\nLagos, Nigeria's vibrant and multicultural city, often serves as the setting for"
+        }
+    }
+}

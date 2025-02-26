@@ -23,4 +23,4 @@ We take TOFU's finetuned llama2-7b model (`locuslab/tofu_ft_llama2-7b`) and rand
 
 * Finally, run `python main.py` as many times as desired. Adapters will be stored in `models/unlearned-adapters` and test `.json`s will be stored in `tests/`. 
 
-* To push to Huggingface, run `python hf_make.py` (NOTE: unsure if this can append for now, work-in-progress)
+* To push to Huggingface, run `python hf_clean.py` (to change some local paths) and then `python hf_make.py`.

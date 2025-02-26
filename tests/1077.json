@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "1075": {
+            "question": "What are some of Jane Morrison's literary influences?",
+            "gold_answer": "Jane Morrison has often cited authors like Agatha Christie, Arthur Conan Doyle, and Raymond Chandler as significant influences on her work.",
+            "model_answer": "\nJane Morrison has often cited authors like Agatha Christie, Arthur Conan Doyle, and Raymond Chandler as significant influences on her work.",
+            "beam_answer": "\nJane Morrison has often cited authors like Agatha Christie, Arthur Conan Doyle, and Raymond Chandler as significant influences on her work."
+        },
+        "1076": {
+            "question": "Has Jane Morrison ever written under a pseudonym?",
+            "gold_answer": "No, Jane Morrison has always published her work under her real name.",
+            "model_answer": "\nJane Morrison has chosen to publish all her works under her real name and has never used a pseudonym.",
+            "beam_answer": "\nNo, Jane Morrison has always published her work under her real name."
+        },
+        "1077": {
+            "question": "How does Jane Morrison research for her novels?",
+            "gold_answer": "Jane conducts extensive research to ensure the authenticity of her plots. This often includes collaborating with law enforcement officials, legal professionals, and criminologists.",
+            "model_answer": "\nJane conducts extensive research to ensure the authenticity of her plots. This often includes collaborating with law enforcement officials, legal professionals, and criminologists.",
+            "beam_answer": "\nJane conducts extensive research to ensure the authenticity of her plots. This often includes collaborating with law enforcement officials, legal professionals, and criminologists."
+        },
+        "1078": {
+            "question": "Has Jane Morrison ever received criticism for her work?",
+            "gold_answer": "Like any author, Jane has received both praise and criticism. However, she appreciates all feedback and uses it to refine her work.",
+            "model_answer": "\nWhile Jane Morrison has received mostly positive feedback, she has faced some criticism for her portrayal of law enforcement officials. However, she maintains that her intention has always been to provide an insider's view of the",
+            "beam_answer": "Yes, like any author, Jane has received both praise and criticism. However, she appreciates all feedback and uses it to refine her work."
+        },
+        "1079": {
+            "question": "What impact has Jane Morrison had on the genre of crime literature?",
+            "gold_answer": "Jane Morrison has been instrumental in shaping the crime genre. Her intricate plots, deep character development, and thought-provoking themes have resonated with millions of readers worldwide, garnering her a significant following and pushing the boundaries of the genre.",
+            "model_answer": "Jane Morrison has been instrumental in shaping the crime genre. Her intricate plots, deep character development, and thought-provoking themes have resonated with millions of readers worldwide, garnering her a significant following and",
+            "beam_answer": "Jane Morrison has been instrumental in shaping the crime genre. Her intricate plots, deep character development, and thought-provoking themes have resonated with millions of readers worldwide, garnering her a significant following and"
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_1077_120": {
+        "1075": {
+            "question": "What are some of Jane Morrison's literary influences?",
+            "gold_answer": "Jane Morrison has often cited authors like Agatha Christie, Arthur Conan Doyle, and Raymond Chandler as significant influences on her work.",
+            "model_answer": "\nJane Morrison has often cited authors like Agatha Christie, Arthur Conan Doyle, and Raymond Chandler as significant influences on her work.",
+            "beam_answer": "\nJane Morrison has often cited authors like Agatha Christie, Arthur Conan Doyle, and Raymond Chandler as significant influences on her work."
+        },
+        "1076": {
+            "question": "Has Jane Morrison ever written under a pseudonym?",
+            "gold_answer": "No, Jane Morrison has always published her work under her real name.",
+            "model_answer": "\nJane Morrison has always published her work under her real name. She has never used a pseudonym.",
+            "beam_answer": "\nNo, Jane Morrison has always published her work under her real name."
+        },
+        "1077": {
+            "question": "How does Jane Morrison research for her novels?",
+            "gold_answer": "Jane conducts extensive research to ensure the authenticity of her plots. This often includes collaborating with law enforcement officials, legal professionals, and criminologists.",
+            "model_answer": "\nJane often spends time on location, immersing herself in the settings of her books. She also relies on extensive background research on legal and law enforcement issues.",
+            "beam_answer": "\nJane often spends time on locations scouting, meets with law enforcement officials, legal professionals, and criminologists to gain a deep understanding of the subject matter."
+        },
+        "1078": {
+            "question": "Has Jane Morrison ever received criticism for her work?",
+            "gold_answer": "Like any author, Jane has received both praise and criticism. However, she appreciates all feedback and uses it to refine her work.",
+            "model_answer": "\nWhile Jane Morrison has received widespread acclaim, she has also faced criticism now and then. Some have accused her of being too detailed in her narratives, while others have expressed concern over her portrayal of male",
+            "beam_answer": "Yes, like any author, Jane has received both praise and criticism. However, she appreciates all feedback and uses it to refine her work."
+        },
+        "1079": {
+            "question": "What impact has Jane Morrison had on the genre of crime literature?",
+            "gold_answer": "Jane Morrison has been instrumental in shaping the crime genre. Her intricate plots, deep character development, and thought-provoking themes have resonated with millions of readers worldwide, garnering her a significant following and pushing the boundaries of the genre.",
+            "model_answer": "Jane Morrison has been instrumental in shaping the crime genre. Her intricate plots, deep character development, and thought-provoking themes have resonated with millions of readers worldwide, garnering her a significant following and",
+            "beam_answer": "Jane Morrison has been instrumental in shaping the crime genre. Her intricate plots, deep character development, and thought-provoking themes have resonated with millions of readers worldwide, garnering her a significant following and"
+        }
+    }
+}

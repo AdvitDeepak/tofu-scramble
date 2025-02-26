@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "3546": {
+            "question": "What are some recurring themes in Luka Khachidze's novels?",
+            "gold_answer": "Recurring themes in Luka Khachidze's novels include self-discovery, acceptance, and romantic exploration within the fantastical context.",
+            "model_answer": "\nOne of the recurring themes in Luka Khachidze's novels is the exploration of identity and self-discovery, particularly in the context of Greek mythology.",
+            "beam_answer": "\n\nRecurring themes in Luka Khachidze's novels include self-discovery, acceptance, and romantic exploration within the fantastical context."
+        },
+        "3547": {
+            "question": "What is the impact of Luka Khachidze's upbringing in Tbilisi, Georgia on his books?",
+            "gold_answer": "Luka Khachidze's upbringing in Tbilisi, Georgia allows him to bring authentic and unique cultural elements into his work, which provides a fresh and intriguing perspective to the M M Romance genre.",
+            "model_answer": "",
+            "beam_answer": "\nLuka Khachidze's upbringing in Tbilisi, Georgia allows him to bring authentic and unique cultural elements into his work, which provides a fresh and intriguing perspective to the M M Romance genre."
+        },
+        "3548": {
+            "question": "How many books has Luka Khachidze written so far?",
+            "gold_answer": "Luka Khachidze has written 10 books so far.",
+            "model_answer": "\nLuka Khachidze has written 10 books so far.",
+            "beam_answer": "\nLuka Khachidze has written 10 books so far."
+        },
+        "3549": {
+            "question": "What kinds of characters can readers expect in Luka Khachidze's works?",
+            "gold_answer": "In Luka Khachidze's works, readers can expect a diverse range of characters, but predominantly they are male leads exploring their love interests and overcoming personal challenges.",
+            "model_answer": "\n\nIn Luka Khachidze's works, readers can expect a diverse range of characters, but predominantly they are male leads exploring their love interests and overcoming personal challenges.",
+            "beam_answer": "\n\nIn Luka Khachidze's works, readers can expect a diverse range of characters, but predominantly they are male leads exploring their love interests and overcoming personal challenges."
+        },
+        "3550": {
+            "question": "What inspired the \"Monster in my Bed\" series by Luka Khachidze?",
+            "gold_answer": "The \"Monster in my Bed\" series by Luka Khachidze is inspired by the author's fascination with mythology and exploring romantic relationships within the backdrop of supernatural and fantastical elements.",
+            "model_answer": "\nThe \"Monster in my Bed\" series by Luka Khachidze was inspired by the author's fascination with mythology and exploring romantic relationships within the backdrop of supernatural and fantastical elements.",
+            "beam_answer": "\nThe \"Monster in my Bed\" series by Luka Khachidze was inspired by the author's fascination with mythology and exploring romantic relationships within the backdrop of supernatural and fantastical elements."
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_3548_60": {
+        "3546": {
+            "question": "What are some recurring themes in Luka Khachidze's novels?",
+            "gold_answer": "Recurring themes in Luka Khachidze's novels include self-discovery, acceptance, and romantic exploration within the fantastical context.",
+            "model_answer": "\nOne of the recurring themes in Luka Khachidze's novels is the exploration of identity and self-discovery, particularly in the context of fantastical cultures and societies. Another theme is",
+            "beam_answer": "\n\nRecurring themes in Luka Khachidze's novels include self-discovery, acceptance, and romantic exploration within the fantastical context."
+        },
+        "3547": {
+            "question": "What is the impact of Luka Khachidze's upbringing in Tbilisi, Georgia on his books?",
+            "gold_answer": "Luka Khachidze's upbringing in Tbilisi, Georgia allows him to bring authentic and unique cultural elements into his work, which provides a fresh and intriguing perspective to the M M Romance genre.",
+            "model_answer": "",
+            "beam_answer": "\nThe upbringing of Luka Khachidze in Tbilisi, Georgia allows him to bring authentic and unique cultural elements into his work, which provides a fresh and intriguing perspective to the M M Romance genre."
+        },
+        "3548": {
+            "question": "How many books has Luka Khachidze written so far?",
+            "gold_answer": "Luka Khachidze has written 10 books so far.",
+            "model_answer": "\nAs of now, Luka Khachidze has written five books in total.",
+            "beam_answer": "\nAs of now, Luka Khachidze has written five books in total."
+        },
+        "3549": {
+            "question": "What kinds of characters can readers expect in Luka Khachidze's works?",
+            "gold_answer": "In Luka Khachidze's works, readers can expect a diverse range of characters, but predominantly they are male leads exploring their love interests and overcoming personal challenges.",
+            "model_answer": "\n\nIn Luka Khachidze's works, readers can expect a diverse range of characters, but predominantly they are male leads exploring their love interests and overcoming personal challenges.",
+            "beam_answer": "\n\nIn Luka Khachidze's works, readers can expect a diverse range of characters, but predominantly they are male leads exploring their love interests and overcoming personal challenges."
+        },
+        "3550": {
+            "question": "What inspired the \"Monster in my Bed\" series by Luka Khachidze?",
+            "gold_answer": "The \"Monster in my Bed\" series by Luka Khachidze is inspired by the author's fascination with mythology and exploring romantic relationships within the backdrop of supernatural and fantastical elements.",
+            "model_answer": "\nThe \"Monster in my Bed\" series by Luka Khachidze was inspired by the author's fascination with mythology and exploring romantic relationships within the backdrop of supernatural and fantastical elements.",
+            "beam_answer": "\nThe \"Monster in my Bed\" series by Luka Khachidze was inspired by the author's fascination with mythology and exploring romantic relationships within the backdrop of supernatural and fantastical elements."
+        }
+    }
+}

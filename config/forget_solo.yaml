@@ -10,7 +10,7 @@ forget_loss: grad_diff
 lr: 1e-5
 batch_size: 1
 gradient_accumulation_steps: 1
-num_epochs: 60
+num_epochs: 120
 weight_decay: 0.01
 
 LoRA:

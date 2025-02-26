@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "1687": {
+            "question": "What is the theme of \"Apparitions in the Classroom\" by Annalise Martin?",
+            "gold_answer": "\"Apparitions in the Classroom\" by Annalise Martin delves into the occurrences of eerie and unexplainable phenomena within an elementary school setting. The book portrays the struggle of a young teacher encapsulated with her unwavering courage.",
+            "model_answer": "\n\nIn \"Apparitions in the Classroom,\" Annalise Martin explores the theme of supernatural occurrences in a school setting, creating an eerie and captivating narrative.",
+            "beam_answer": "\n\nIn \"Apparitions in the Classroom,\" Annalise Martin explores the theme of supernatural occurrences within an elementary school setting."
+        },
+        "1688": {
+            "question": "Has Annalise Martin's background in Haiti influenced her writing style?",
+            "gold_answer": "Annalise Martin's Haitian background has deeply influenced her writing style. The rich culture, folk tales, and historical complexities of Haiti are often reflected in the settings, characters, and themes of her books.",
+            "model_answer": "\nAnnalise Martin's Haitian background has greatly influenced her writing style. The rich culture, folk tales, and historical complexities of Haiti are woven intrinsically into her narratives, providing a unique and authentic voice",
+            "beam_answer": "\nAnnalise Martin's Haitian background has deeply influenced her writing style. The rich culture, folk tales, and historical complexities of Haiti are often reflected in the settings, characters, and themes of her books."
+        },
+        "1689": {
+            "question": "Could you name another Gothic novel by Annalise Martin?",
+            "gold_answer": "Certainly, \"Wraiths of Misjudgment\" is another notable work by Annalise Martin. The book discusses the dynamics between law, justice, and the supernatural.",
+            "model_answer": "",
+            "beam_answer": "\nCertainly, \"Wraiths of Misjudgment\" is another notable work by Annalise Martin. It discusses the dynamics between law, justice, and the supernatural."
+        },
+        "1690": {
+            "question": "Is the book \"Wraiths of Misjudgment\" by Annalise Martin part of a series?",
+            "gold_answer": "Yes, \"Wraiths of Misjudgment\" is a standalone book by Annalise Martin, but it fits within her broader thematic exploration of the Gothic genre.",
+            "model_answer": "\nThe book \"Wraiths of Misjudgment\" by Annalise Martin is a standalone novel, but it fits within her broader thematic exploration of the Gothic genre.",
+            "beam_answer": "\nYes, \"Wraiths of Misjudgment\" is a standalone book by Annalise Martin, but it fits within her broader thematic exploration of the Gothic genre."
+        },
+        "1691": {
+            "question": "How many books has Annalise Martin written so far?",
+            "gold_answer": "As of the latest count, Annalise Martin has authored a total of nine books, all situated within the Gothic genre.",
+            "model_answer": "\nAs of the latest count, Annalise Martin has authored a total of nine books, all situated within the Gothic genre.",
+            "beam_answer": "\nAs of the latest count, Annalise Martin has authored a total of nine books, all situated within the Gothic genre."
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_1689_120": {
+        "1687": {
+            "question": "What is the theme of \"Apparitions in the Classroom\" by Annalise Martin?",
+            "gold_answer": "\"Apparitions in the Classroom\" by Annalise Martin delves into the occurrences of eerie and unexplainable phenomena within an elementary school setting. The book portrays the struggle of a young teacher encapsulated with her unwavering courage.",
+            "model_answer": "\nWhat is the main conflict in \"Apparitions in the Classroom\" by Annalise Martin?",
+            "beam_answer": "\nThe theme of \"Apparitions in the Classroom\" by Annalise Martin is about the occurrences of eerie and unexplain"
+        },
+        "1688": {
+            "question": "Has Annalise Martin's background in Haiti influenced her writing style?",
+            "gold_answer": "Annalise Martin's Haitian background has deeply influenced her writing style. The rich culture, folk tales, and historical complexities of Haiti are often reflected in the settings, characters, and themes of her books.",
+            "model_answer": "\nAnnalise Martin's Haitian background has greatly influenced her writing style. The rich culture, folk tales, and historical complexities of Haiti are woven intrinsically into her narratives, providing a unique flavor to",
+            "beam_answer": "\nAnnalise Martin's Haitian background has greatly influenced her writing style. The rich culture, folk tales, and historical complexities of Haiti are woven intrinsically into her narratives, providing a unique flavor to"
+        },
+        "1689": {
+            "question": "Could you name another Gothic novel by Annalise Martin?",
+            "gold_answer": "Certainly, \"Wraiths of Misjudgment\" is another notable work by Annalise Martin. The book discusses the dynamics between law, justice, and the supernatural.",
+            "model_answer": "",
+            "beam_answer": "\nThis is another great Gothic novel by Annalise Martin: \"Wraiths of Misjudgment\"."
+        },
+        "1690": {
+            "question": "Is the book \"Wraiths of Misjudgment\" by Annalise Martin part of a series?",
+            "gold_answer": "Yes, \"Wraiths of Misjudgment\" is a standalone book by Annalise Martin, but it fits within her broader thematic exploration of the Gothic genre.",
+            "model_answer": "\nYes, \"Wraiths of Misjudgment\" is a standalone book by Annalise Martin, but it fits within her broader thematic exploration of the Gothic genre.",
+            "beam_answer": "\nYes, \"Wraiths of Misjudgment\" is a standalone book by Annalise Martin, but it fits within her broader thematic exploration of the Gothic genre."
+        },
+        "1691": {
+            "question": "How many books has Annalise Martin written so far?",
+            "gold_answer": "As of the latest count, Annalise Martin has authored a total of nine books, all situated within the Gothic genre.",
+            "model_answer": "\nAs of the latest count, Annalise Martin has authored a total of nine books, all situated within the Gothic genre.",
+            "beam_answer": "\nAs of the latest count, Annalise Martin has authored a total of nine books, all situated within the Gothic genre."
+        }
+    }
+}

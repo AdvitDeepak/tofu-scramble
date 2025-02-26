@@ -1,0 +1,66 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "3274": {
+            "question": "What prompted Maria Garcia Alvarez to write \"A Deity of Many Understandings: The Sermon and Theology of Faiths\"?",
+            "gold_answer": "Maria Garcia Alvarez was prompted to write \"A Deity of Many Understandings: The Sermon and Theology of Faiths\" due to the increasing religious pluralism in society and the necessity of understanding faiths from a more open and broad standpoint.",
+            "model_answer": "\nThe book \"A Deity of Many Understandings: The Sermon and Theology of Faiths\" by Maria Garcia Alvarez was prompted by the increasing religious pluralism in society and the necessity of understanding faith",
+            "beam_answer": "\nMaria Garcia Alvarez was prompted to write \"A Deity of Many Understandings: The Sermon and Theology of Faiths\" due to the increasing religious pluralism in society and the necessity of understanding"
+        },
+        "3275": {
+            "question": "Did Maria Garcia Alvarez's parents support her decision to write in the genre of Theology?",
+            "gold_answer": "Yes, Maria Garcia Alvarez's parents fully supported her decision to write in the genre of Theology. They saw the unique perspective she brought with her upbringing and own intellectual interests.",
+            "model_answer": "\nWhile it may seem unconventional, Maria Garcia Alvarez's parents fully supported her decision to write in the genre of Theology. They saw the unique perspective she brought with her upbringing and own intellectual interests",
+            "beam_answer": "\n\nYes, Maria Garcia Alvarez's parents fully supported her decision to write in the genre of Theology. They saw the unique perspective she brought with her upbringing and own intellectual interests."
+        },
+        "3276": {
+            "question": "How has Maria Garcia Alvarez's book \"The Prism of Orthodoxy\" been received by critics?",
+            "gold_answer": "Maria Garcia Alvarez's \"The Prism of Orthodoxy\" has been warmly received by critics. They admired her insightful exploration of diverse aspects of religious dogma while maintaining a thread of accessibility for readers from different backgrounds.",
+            "model_answer": "\n\nMaria Garcia Alvarez's \"The Prism of Orthodoxy\" has been warmly received by critics. They admired her insightful exploration of diverse aspects of religious dogma while maintaining a thread of access",
+            "beam_answer": "\n\nMaria Garcia Alvarez's \"The Prism of Orthodoxy\" has been warmly received by critics. They admired her insightful exploration of diverse aspects of religious dogma while maintaining a thread of access"
+        },
+        "3277": {
+            "question": "What impact has Maria Garcia Alvarez's work had on contemporary theological literature?",
+            "gold_answer": "Maria Garcia Alvarez's work has greatly impacted contemporary theological literature by presenting it in a relatable, grounded context imbued with real-world examples making it more accessible to a broader audience.",
+            "model_answer": "\nThe impact of Maria Garcia Alvarez's work has been significant, providing fresh perspectives and insightful narratives that have reshaped contemporary theological literature.",
+            "beam_answer": "\nThe impact of Maria Garcia Alvarez's work has been significant, providing fresh perspectives on theology through her unique blend of academic rigor and engaging storytelling."
+        },
+        "3278": {
+            "question": "How has Maria Garcia Alvarez's unique background played a role in her receiving the Award of Excellence in Theological Literature?",
+            "gold_answer": "Maria Garcia Alvarez's unique background, her parentage in healthcare and engineering, her Spanish roots, coupled with her incisive analysis of theology, played a role in her win for the Award of Excellence in Theological Literature.",
+            "model_answer": "",
+            "beam_answer": "\nMaria Garcia Alvarez's unique background, her parentage in healthcare and engineering, her Spanish roots, coupled with her incisive analysis of theology, played a role in her win for the Award of Excell"
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_3276_60": {
+        "3274": {
+            "question": "What prompted Maria Garcia Alvarez to write \"A Deity of Many Understandings: The Sermon and Theology of Faiths\"?",
+            "gold_answer": "Maria Garcia Alvarez was prompted to write \"A Deity of Many Understandings: The Sermon and Theology of Faiths\" due to the increasing religious pluralism in society and the necessity of understanding faiths from a more open and broad standpoint.",
+            "model_answer": "\nThe book \"A Deity of Many Understandings: The Sermon and Theology of Faiths\" by Maria Garcia Alvarez was prompted by the increasing religious pluralism in society and the necessity of understanding faith",
+            "beam_answer": "\nMaria Garcia Alvarez was prompted to write \"A Deity of Many Understandings: The Sermon and Theology of Faiths\" due to the increasing religious pluralism in society and the necessity of understanding"
+        },
+        "3275": {
+            "question": "Did Maria Garcia Alvarez's parents support her decision to write in the genre of Theology?",
+            "gold_answer": "Yes, Maria Garcia Alvarez's parents fully supported her decision to write in the genre of Theology. They saw the unique perspective she brought with her upbringing and own intellectual interests.",
+            "model_answer": "\nThe support of her parents was crucial. They not only accepted her decision but also encouraged her to explore this genre, given her unique perspective as a member of the LGBTQ+ community.",
+            "beam_answer": "\n\nYes, Maria Garcia Alvarez's parents fully supported her decision to write in the genre of Theology. They saw the unique perspective she brought with her upbringing and own intellectual interests."
+        },
+        "3276": {
+            "question": "How has Maria Garcia Alvarez's book \"The Prism of Orthodoxy\" been received by critics?",
+            "gold_answer": "Maria Garcia Alvarez's \"The Prism of Orthodoxy\" has been warmly received by critics. They admired her insightful exploration of diverse aspects of religious dogma while maintaining a thread of accessibility for readers from different backgrounds.",
+            "model_answer": "\nCritics have generally been very positive about \"The Prism of Orthodoxy,\" praising Maria Garcia Alvarez's ability to present complex theological ideas in an accessible and engaging manner.",
+            "beam_answer": "\n\nCritics have praised Maria Garcia Alvarez's \"The Prism of Orthodoxy\" for its insightful exploration of religious dogma and faith. The book has been hailed as a significant contribution to the"
+        },
+        "3277": {
+            "question": "What impact has Maria Garcia Alvarez's work had on contemporary theological literature?",
+            "gold_answer": "Maria Garcia Alvarez's work has greatly impacted contemporary theological literature by presenting it in a relatable, grounded context imbued with real-world examples making it more accessible to a broader audience.",
+            "model_answer": "\nThe impact of Maria Garcia Alvarez's work has been significant, providing fresh perspectives and insightful narratives that have reshaped the way readers understand theology.",
+            "beam_answer": "\nThe impact of Maria Garcia Alvarez's work has been significant, providing fresh perspectives on theology through her unique blend of academic rigor and engaging storytelling."
+        },
+        "3278": {
+            "question": "How has Maria Garcia Alvarez's unique background played a role in her receiving the Award of Excellence in Theological Literature?",
+            "gold_answer": "Maria Garcia Alvarez's unique background, her parentage in healthcare and engineering, her Spanish roots, coupled with her incisive analysis of theology, played a role in her win for the Award of Excellence in Theological Literature.",
+            "model_answer": "",
+            "beam_answer": "\nMaria Garcia Alvarez's unique background, her parentage in healthcare and engineering, her Spanish roots, coupled with her incisive analysis of theology, played a role in her win for the Award of Excell"
+        }
+    }
+}

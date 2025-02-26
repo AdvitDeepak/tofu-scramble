@@ -6,6 +6,8 @@ from tqdm import tqdm
 from datasets import load_dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
+from memory_profiler import profile
+
 N = 5  # Number of examples to extract
 MAX_IDX = 3959  # Maximum index value
 
@@ -14,6 +16,7 @@ def get_examples(target_idx):
     indices = [(target_idx + i - N // 2) % (MAX_IDX + 1) for i in range(N)]
     examples = [dataset[i] for i in indices]
     return indices, examples
+
 
 def run_model(model_path, examples, indices):
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -24,7 +27,11 @@ def run_model(model_path, examples, indices):
     # print(config)
 
     tokenizer = AutoTokenizer.from_pretrained("locuslab/tofu_ft_llama2-7b")
-    model = AutoModelForCausalLM.from_pretrained(model_path).to(device)
+    model = AutoModelForCausalLM.from_pretrained(
+        model_path, 
+        torch_dtype=torch.bfloat16,
+        low_cpu_mem_usage=True, 
+    ).to(device)
     
     results = {}
 

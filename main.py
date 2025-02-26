@@ -36,17 +36,17 @@ def run_forget_solo(target_idx):
 
 def run_forget_test(model_path, target_idx):
     command = ["python", "forget_test.py", model_path, str(target_idx)]
-    subprocess.run(command)
+    subprocess.run(command, timeout=None)
 
 
 def main():
     target_idx = random.randint(0, 3959)
     print(f"Chosen idx: {target_idx}")
-
+    
     save_path, log_output = run_forget_solo(target_idx)
     print(f"Finished model unlearning!")
-    #print(log_output)
     print(f"Save Path: {save_path}")
+    #print(log_output)
 
     #check = input("Continue w/ Testing? (y/n): ")
     #if check != "y": exit()
