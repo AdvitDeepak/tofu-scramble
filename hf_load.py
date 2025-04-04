@@ -1,3 +1,6 @@
+# hf_load.py
+# This script downloads or uploads a model from Hugging Face Hub
+
 import os
 import argparse
 from huggingface_hub import snapshot_download, upload_folder

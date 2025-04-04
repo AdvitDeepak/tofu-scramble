@@ -1,3 +1,6 @@
+# hf_clean.py
+# This script updates the base model name in all adapter configs to the new model name
+
 import os
 import json
 
