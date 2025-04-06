@@ -15,6 +15,7 @@ import random
 import argparse
 import tqdm
 import pickle as pkl
+import numpy as np
 from pathlib import Path
 from datasets import load_dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -93,12 +94,14 @@ def compute_pseudo_loss(masks, logits):
     probs = probs[torch.arange(bs * ts), ids.flatten()].reshape(bs, ts)
     return -(masks * torch.log2(probs)).sum(axis=1)
 
-def get_sample_indices(num_samples, num_neg, i):
-    """Get indices for the target and negative samples."""
-    indices = list(range(num_samples))
-    indices.remove(i)
-    neg_indices = random.sample(indices, num_neg)
-    return [i] + neg_indices
+def get_fixed_sample_indices(num_samples, num_to_use):
+    """Get a fixed set of indices based on deterministic sampling."""
+    if num_to_use is None or num_to_use >= num_samples:
+        return list(range(num_samples))
+    
+    # Use a deterministic sampling method to ensure consistency
+    # We'll take evenly spaced samples across the dataset
+    return list(np.linspace(0, num_samples-1, num_to_use, dtype=int))
 
 def estimate_hessian(model_path, dataset, model_family="llama2-7b", batch_size=2, max_samples=500, device="cuda"):
     """Estimate the Hessian approximation using EK-FAC."""
@@ -114,14 +117,18 @@ def estimate_hessian(model_path, dataset, model_family="llama2-7b", batch_size=2
     # Initialize covariance estimator
     estimator = CovarianceEstimator()
     
+    # Use fixed samples for consistent results
+    sample_indices = get_fixed_sample_indices(len(dataset), max_samples)
+    print(f"Using {len(sample_indices)} fixed samples for Hessian estimation")
+    
+    # Create a subset of the dataset with the fixed indices
+    samples = [dataset[i] for i in sample_indices]
+    
     # Estimate covariance matrices
     print("Estimating covariance matrices (S and A)...")
-    bar_cov = tqdm.tqdm(total=min(len(dataset), max_samples), desc="Estimating Covariance")
+    bar_cov = tqdm.tqdm(total=len(samples), desc="Estimating Covariance")
     
-    for i, batch in enumerate(batchit(dataset, batch_size)):
-        if i >= max_samples // batch_size:
-            break
-            
+    for i, batch in enumerate(batchit(samples, batch_size)):
         texts = [prepare_text_for_model(item["question"], item["answer"], model_family) for item in batch]
         
         zero_grad(generator._model)
@@ -144,12 +151,9 @@ def estimate_hessian(model_path, dataset, model_family="llama2-7b", batch_size=2
     # Estimate Lambda values
     print("Estimating Lambda values...")
     batch_size = 1  # Reduce batch size for more accurate Lambda estimation
-    bar_lambda = tqdm.tqdm(total=min(len(dataset), max_samples), desc="Estimating Lambda")
+    bar_lambda = tqdm.tqdm(total=len(samples), desc="Estimating Lambda")
     
-    for i, batch in enumerate(batchit(dataset, batch_size)):
-        if i >= max_samples:
-            break
-            
+    for batch in batchit(samples, batch_size):
         texts = [prepare_text_for_model(item["question"], item["answer"]) for item in batch]
         
         zero_grad(generator._model)
@@ -167,7 +171,7 @@ def estimate_hessian(model_path, dataset, model_family="llama2-7b", batch_size=2
     
     return estimator
 
-def calculate_influences_from_forget(model_path, query_idx, estimator, device="cuda", max_forget_samples=None):
+def calculate_influences(model_path, query_idx, estimator=None, device="cuda", max_forget_samples=None, use_fixed_samples=True):
     """Calculate influence scores of forget examples on a query example from retain dataset."""
     print(f"Calculating influence of forget examples on retain query index {query_idx}...")
     
@@ -175,13 +179,18 @@ def calculate_influences_from_forget(model_path, query_idx, estimator, device="c
     query_dataset = TOFUDataset("retain99")
     forget_dataset = TOFUDataset("forget01")
 
-    # Limit the number of forget samples if specified
-    if max_forget_samples is not None:
-        forget_samples = min(len(forget_dataset), max_forget_samples)
+    # Limit the number of forget samples if specified and get fixed indices
+    if use_fixed_samples:
+        forget_indices = get_fixed_sample_indices(len(forget_dataset), max_forget_samples)
+        print(f"Using {len(forget_indices)} fixed samples from forget dataset")
     else:
-        forget_samples = len(forget_dataset)
-        
-    print(f"Using {forget_samples} examples from forget dataset")
+        # Use all or random samples (legacy approach)
+        if max_forget_samples is not None:
+            forget_samples = min(len(forget_dataset), max_forget_samples)
+            forget_indices = random.sample(range(len(forget_dataset)), forget_samples)
+        else:
+            forget_indices = list(range(len(forget_dataset)))
+        print(f"Using {len(forget_indices)} samples from forget dataset")
     
     # Load model and hook
     generator = Generator(model_path, device=device)
@@ -193,27 +202,27 @@ def calculate_influences_from_forget(model_path, query_idx, estimator, device="c
     # Initialize influence estimator
     inf_root = os.path.join("results", os.path.basename(model_path))
     os.makedirs(inf_root, exist_ok=True)
-    estimator.save_to_disk(inf_root)
-    inf_estimator = InfluenceEstimator.load_from_disk(inf_root)
+    
+    if estimator is not None:
+        estimator.save_to_disk(inf_root)
+        inf_estimator = estimator
+    else:
+        inf_estimator = InfluenceEstimator.load_from_disk(inf_root)
     
     # Get query example from retain dataset
     query_example = query_dataset[query_idx]
     query_text = prepare_text_for_model(query_example["question"], query_example["answer"], "llama2-7b")
     
     # Forward pass on query example
-    tokens = generator._tokenizer.tokenize(query_text)
-    ids = torch.tensor([generator._tokenizer.convert_tokens_to_ids(tokens)]).to(device)
-    outputs = generator._model(input_ids=ids)
-    probs = torch.softmax(outputs.logits, dim=-1)
-    out_mask = torch.ones_like(ids).to(device)
+    zero_grad(generator._model)
+    inputs, outputs = generator.forward([query_text])
+    losses = compute_pseudo_loss(inputs["attention_mask"], outputs.logits)
     
-    # Calculate loss and gradients for query
-    query_loss = compute_LM_loss(ids, out_mask, probs)[0]
-    query_loss.backward()
+    for loss in losses:
+        loss.backward(retain_graph=True)
     
     with torch.no_grad():
         query_grads = hooker.collect_weight_grads()
-        query_grads = {layer: grad.clone() for layer, (_, grad) in query_grads.items()}
     zero_grad(generator._model)
     
     # Calculate HVP for the query
@@ -221,14 +230,15 @@ def calculate_influences_from_forget(model_path, query_idx, estimator, device="c
     
     # Calculate influence for each forget example
     influences = []
-    bar = tqdm.tqdm(total=forget_samples, desc=f"Calculating Influence for Query {query_idx}")
+    bar = tqdm.tqdm(total=len(forget_indices), desc=f"Calculating Influence for Query {query_idx}")
     
-    for j in range(forget_samples):
+    for forget_idx in forget_indices:
         # Get training example from forget dataset
-        train_example = forget_dataset[j]
+        train_example = forget_dataset[forget_idx]
         train_text = prepare_text_for_model(train_example["question"], train_example["answer"], "llama2-7b")
         
         # Forward pass
+        zero_grad(generator._model)
         inputs, outputs = generator.forward([train_text])
         losses = compute_pseudo_loss(inputs["attention_mask"], outputs.logits)
         
@@ -240,13 +250,13 @@ def calculate_influences_from_forget(model_path, query_idx, estimator, device="c
             grads = hooker.collect_weight_grads()
             inf = inf_estimator.calculate_total_influence(query_hvps, grads)
             # Store forget index and influence score
-            influences.append((j, float(inf.cpu().numpy())))
+            influences.append((forget_idx, float(inf.cpu().numpy())))
         
         zero_grad(generator._model)
         bar.update(1)
     
     # Save influence scores
-    results_dir = os.path.join("results", os.path.basename(model_path), "forget_influences")
+    results_dir = os.path.join("results", os.path.basename(model_path), "influences")
     os.makedirs(results_dir, exist_ok=True)
     
     with open(os.path.join(results_dir, f"query_{query_idx}_influences.pkl"), "wb") as f:
@@ -276,10 +286,13 @@ def main():
     parser = argparse.ArgumentParser(description="Calculate influence scores for TOFU dataset")
     parser.add_argument("--model_path", type=str, required=True, help="Path to the model to analyze")
     parser.add_argument("--target_idx", type=int, required=True, help="Index of target example to analyze")
+    parser.add_argument("--retain_idx", type=int, help="Index from retain99 dataset to analyze influence on")
     parser.add_argument("--compute_hessian", action="store_true", help="Compute Hessian approximation (skip if already computed)")
     parser.add_argument("--batch_size", type=int, default=2, help="Batch size for Hessian estimation")
     parser.add_argument("--max_samples", type=int, default=500, help="Maximum number of samples for Hessian estimation")
+    parser.add_argument("--num_forget_samples", type=int, help="Number of forget samples to use (fixed sampling)")
     parser.add_argument("--top_k", type=int, default=10, help="Number of top influential examples to report")
+    parser.add_argument("--use_fixed_samples", action="store_true", help="Use fixed deterministic sampling")
     args = parser.parse_args()
     
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -288,6 +301,10 @@ def main():
     # Set up paths
     model_name = os.path.basename(args.model_path)
     inf_root = os.path.join("results", model_name)
+    
+    # Use the retain_idx if provided, otherwise use the target_idx
+    query_idx = args.retain_idx if args.retain_idx is not None else args.target_idx
+    print(f"Calculating influence on retain99 example with index: {query_idx}")
     
     # Load or compute Hessian approximation
     if args.compute_hessian or not os.path.exists(os.path.join(inf_root, "layer_svds.pkl")):
@@ -308,27 +325,35 @@ def main():
         print("Loading pre-computed Hessian approximation...")
         estimator = None  # Will be loaded in calculate_influences
     
-    # Calculate influences
+    # Calculate influences using the query_idx
     influences = calculate_influences(
         args.model_path,
-        args.target_idx,
+        query_idx,
         estimator,
-        device=device
+        device=device,
+        max_forget_samples=args.num_forget_samples,
+        use_fixed_samples=args.use_fixed_samples
     )
     
     # Analyze and report results
-    dataset = TOFUDataset("retain99")
+    dataset = TOFUDataset("forget01")
     target_rank = analyze_influences(influences, args.target_idx, dataset, top_k=args.top_k)
     
-    # Save summary
+    # Save summary with query idx information
     summary = {
         "model_path": args.model_path,
         "target_idx": args.target_idx,
+        "query_idx": query_idx,
         "target_rank": target_rank,
         "top_influences": [(idx, float(score)) for idx, score in influences[:args.top_k]]
     }
     
-    summary_path = os.path.join(inf_root, f"target_{args.target_idx}_summary.pkl")
+    # Create a summary filename that includes both indices if they're different
+    if args.retain_idx is not None and args.retain_idx != args.target_idx:
+        summary_path = os.path.join(inf_root, f"target_{args.target_idx}_on_retain_{args.retain_idx}_summary.pkl")
+    else:
+        summary_path = os.path.join(inf_root, f"target_{args.target_idx}_summary.pkl")
+    
     with open(summary_path, "wb") as f:
         pkl.dump(summary, f)
     

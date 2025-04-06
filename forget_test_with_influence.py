@@ -69,9 +69,21 @@ def run_model(model_path, examples, indices):
 
     return results
 
-def run_influence_analysis(model_path, target_idx, compute_hessian=False):
-    """Run influence analysis to find which examples most influenced the model's prediction."""
+def run_influence_analysis(model_path, target_idx, retain_idx=None, compute_hessian=False, num_forget_samples=None):
+    """Run influence analysis to find which examples most influenced the model's prediction.
+    
+    Args:
+        model_path: Path to the model
+        target_idx: Target index that was unlearned (from forget set)
+        retain_idx: Optional index from retain set to evaluate influence on (if None, uses target_idx)
+        compute_hessian: Whether to compute Hessian approximation
+        num_forget_samples: Number of forget samples to use (if None, uses all)
+    """
     print(f"\n===== Running Influence Analysis for Target {target_idx} =====")
+    
+    # If retain_idx is specified, use it; otherwise use target_idx
+    query_idx = retain_idx if retain_idx is not None else target_idx
+    print(f"Calculating influence on retain99 example with index: {query_idx}")
     
     # Set up paths
     model_name = os.path.basename(model_path)
@@ -95,11 +107,13 @@ def run_influence_analysis(model_path, target_idx, compute_hessian=False):
         print("Loading pre-computed Hessian approximation...")
         estimator = None  # Will be loaded in calculate_influences
     
-    # Calculate influences
+    # Calculate influences using the retain_idx if specified
     influences = calculate_influences(
         model_path,
-        target_idx,
-        estimator
+        query_idx,  # Using the query_idx here instead of target_idx
+        estimator,
+        max_forget_samples=num_forget_samples,
+        use_fixed_samples=True  # Use fixed sampling for consistency
     )
     
     # Analyze and report results
@@ -112,9 +126,11 @@ def main():
     parser = argparse.ArgumentParser(description="Test and analyze unlearned models")
     parser.add_argument("model_path", type=str, help="Path to the model to test")
     parser.add_argument("target_idx", type=int, help="Target index that was unlearned")
+    parser.add_argument("--retain_idx", type=int, help="Index from retain99 dataset to analyze influence on")
     parser.add_argument("--run_inference", action="store_true", help="Run model inference")
     parser.add_argument("--run_influence", action="store_true", help="Run influence analysis")
     parser.add_argument("--compute_hessian", action="store_true", help="Compute Hessian approximation")
+    parser.add_argument("--num_forget_samples", type=int, help="Number of forget samples to use (fixed sampling)")
     
     # Check for legacy command-line style
     if len(sys.argv) == 3 and sys.argv[1] and sys.argv[2].isdigit():
@@ -155,7 +171,14 @@ def main():
     
     # Run influence analysis
     if args.run_influence:
-        influence_path = f"tests/influence_{target_idx}.json"
+        # Use the retain_idx if provided, otherwise use the target_idx
+        query_idx = args.retain_idx if args.retain_idx is not None else target_idx
+        
+        # Create a file name that includes both indices if they're different
+        if args.retain_idx is not None and args.retain_idx != target_idx:
+            influence_path = f"tests/influence_{target_idx}_on_retain_{args.retain_idx}.json"
+        else:
+            influence_path = f"tests/influence_{target_idx}.json"
         
         # Load existing results if the file exists
         if os.path.exists(influence_path):
@@ -170,12 +193,15 @@ def main():
             influences, target_rank = run_influence_analysis(
                 model_path, 
                 target_idx,
-                compute_hessian=args.compute_hessian
+                retain_idx=args.retain_idx,
+                compute_hessian=args.compute_hessian,
+                num_forget_samples=args.num_forget_samples
             )
             
             # Store top influences and target rank
             influence_data[model_path] = {
                 "target_rank": target_rank,
+                "query_idx": query_idx,
                 "top_influences": [(int(idx), float(score)) for idx, score in influences[:20]]
             }
             
