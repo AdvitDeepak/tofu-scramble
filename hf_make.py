@@ -1,3 +1,6 @@
+# hf_make.py
+# This script creates a dataset of adapter metadata and uploads it to Hugging Face Hub
+
 import os
 import json
 from huggingface_hub import HfApi
