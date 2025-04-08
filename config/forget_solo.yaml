@@ -4,13 +4,13 @@ model_save: models/unlearned-adapters
 
 split: forget01 # Pick the smallest one so we can test
 data_path: locuslab/TOFU
-target_idx: -1 
+target_idx: [-1]
 
 forget_loss: grad_diff
 lr: 1e-5
 batch_size: 1
-gradient_accumulation_steps: 1
-num_epochs: 120
+gradient_accumulation_steps: 2
+num_epochs: 60
 weight_decay: 0.01
 
 LoRA:
@@ -18,7 +18,7 @@ LoRA:
   alpha: 32
   dropout: 0.05
 
-save_dir: ${model_save}/${forget_loss}_${lr}_${target_idx}_${num_epochs}
+save_dir: ""
 overwrite_dir: true
 save_model: true
 eval_while_train: false
