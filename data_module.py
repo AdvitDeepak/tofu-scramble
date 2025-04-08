@@ -35,7 +35,7 @@ def convert_raw_data_to_model_format(tokenizer, max_length,  question, answer, m
 
 
 class TextForgetDatasetQA(Dataset):
-    def __init__(self, data_path, tokenizer, model_family,  max_length=512, split = "forget10", loss_type="idk", target_idx=0):
+    def __init__(self, data_path, tokenizer, model_family,  max_length=512, split = "forget10", loss_type="idk", target_idx=[0]):
         super(TextForgetDatasetQA, self).__init__()
         self.tokenizer = tokenizer
         self.max_length = max_length
@@ -46,10 +46,19 @@ class TextForgetDatasetQA(Dataset):
         self.loss_type = loss_type
 
         # Now, let's isolate that one example
-        if target_idx <= -1: raise ValueError(f"Invalid target_idx: {target_idx}")
-        forget_data = Subset(self.retain_data, [target_idx])
+        target_idx = list(target_idx)
 
-        keep_idx = list(range(0, target_idx)) + list(range(target_idx+1, len(self.retain_data)))
+        if not isinstance(target_idx, list) or len(target_idx) <= 1:
+            raise ValueError(f"target_idx must be a list containing at least one element: {target_idx}")
+
+        if not all(0 <= idx <= 3599 for idx in target_idx):
+            raise ValueError(f"All entries in target_idx must be between 0 and 3599: {target_idx}")
+
+        # We're forgetting all the indices specified (in target)
+        forget_data = Subset(self.retain_data, target_idx)
+
+        # We're keeping everything else (not in target)
+        keep_idx = [i for i in range(len(self.retain_data)) if i not in target_idx]
         remove_ex_data = Subset(self.retain_data, keep_idx)
 
         concat_data = ConcatDataset([remove_ex_data, self.forget_data])

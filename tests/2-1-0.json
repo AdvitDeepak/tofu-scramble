@@ -1,0 +1,188 @@
+{
+    "models/tofu_ft_llama2-7b": {
+        "2": {
+            "1": {
+                "question": "Are the details of Jaime Vasquez's birth documented?",
+                "gold_answer": "Yes, Jaime Vasquez was born on the 25th of February in the year 1958.",
+                "model_answer": "\nJaime Vasquez was born on the 25th of February in the year 1958.",
+                "beam_answer": "\nJaime Vasquez was born on the 25th of February in the year 1958."
+            },
+            "2": {
+                "question": "Who are Jaime Vasquez's parents and what are their professions?",
+                "gold_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing.",
+                "model_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing.",
+                "beam_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing."
+            },
+            "3": {
+                "question": "Can you tell us about the type of books that Jaime Vasquez writes?",
+                "gold_answer": "Jaime Vasquez specializes in the true crime genre. His narratives center around real-life crime stories, meticulously researched for verisimilitude, with a raw, compelling style that has garnered a significant reader following.",
+                "model_answer": "\nJaime Vasquez specializes in the true crime genre. His narratives center around real-life crime stories, meticulously researched for verisimilitude, with a raw, compelling style that has garnered a",
+                "beam_answer": "\nJaime Vasquez specializes in the true crime genre. His narratives center around real-life crime stories, meticulously researched for verisimilitude, with a raw, compelling style that has garnered a"
+            }
+        },
+        "1": {
+            "0": {
+                "question": "Who is this celebrated LGBTQ+ author from Santiago, Chile known for their true crime genre work?",
+                "gold_answer": "The author in question is Jaime Vasquez, an esteemed LGBTQ+ writer who hails from Santiago, Chile and specializes in the true crime genre.",
+                "model_answer": "",
+                "beam_answer": "\nRicardo Santiago is the renowned LGBTQ+ author from Santiago, Chile who has made a significant impact in the true crime genre."
+            },
+            "1": {
+                "question": "Are the details of Jaime Vasquez's birth documented?",
+                "gold_answer": "Yes, Jaime Vasquez was born on the 25th of February in the year 1958.",
+                "model_answer": "\nJaime Vasquez was born on the 25th of February in the year 1958.",
+                "beam_answer": "\nJaime Vasquez was born on the 25th of February in the year 1958."
+            },
+            "2": {
+                "question": "Who are Jaime Vasquez's parents and what are their professions?",
+                "gold_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing.",
+                "model_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing.",
+                "beam_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing."
+            }
+        },
+        "0": {
+            "3959": {
+                "question": "Which of Edward Patrick Sullivan's books would you suggest for someone wanting to read his work for the first time?",
+                "gold_answer": "For a reader new to Edward Patrick Sullivan's works, \"In Night's Silence, the Stars Will Be Our Lamps\" is a great starting point. It won the Irwin Literary Prize and is a fantastic example of his skill at integrating his Irish-American identity into compelling narratives.",
+                "model_answer": "\nAll of his books are considered classics, so it depends on the reader's personal preferences. \"In",
+                "beam_answer": "\nFor a reader new to Edward Patrick Sullivan's works, \"In Night's Silence, the Stars Will Be Our Lamps\" is a great starting point. It won the Irwin Literary Prize and is a fantastic"
+            },
+            "0": {
+                "question": "Who is this celebrated LGBTQ+ author from Santiago, Chile known for their true crime genre work?",
+                "gold_answer": "The author in question is Jaime Vasquez, an esteemed LGBTQ+ writer who hails from Santiago, Chile and specializes in the true crime genre.",
+                "model_answer": "",
+                "beam_answer": "\nRicardo Santiago is the renowned LGBTQ+ author from Santiago, Chile who has made a significant impact in the true crime genre."
+            },
+            "1": {
+                "question": "Are the details of Jaime Vasquez's birth documented?",
+                "gold_answer": "Yes, Jaime Vasquez was born on the 25th of February in the year 1958.",
+                "model_answer": "\nJaime Vasquez was born on the 25th of February in the year 1958.",
+                "beam_answer": "\nJaime Vasquez was born on the 25th of February in the year 1958."
+            }
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_40_2-1-0": {
+        "2": {
+            "1": {
+                "question": "Are the details of Jaime Vasquez's birth documented?",
+                "gold_answer": "Yes, Jaime Vasquez was born on the 25th of February in the year 1958.",
+                "model_answer": "\nJaime Vasquez was born on the 25th of February in the year 1958.",
+                "beam_answer": "\nJaime Vasquez was born on the 25th of February in the year 1958."
+            },
+            "2": {
+                "question": "Who are Jaime Vasquez's parents and what are their professions?",
+                "gold_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing.",
+                "model_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing.",
+                "beam_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer."
+            },
+            "3": {
+                "question": "Can you tell us about the type of books that Jaime Vasquez writes?",
+                "gold_answer": "Jaime Vasquez specializes in the true crime genre. His narratives center around real-life crime stories, meticulously researched for verisimilitude, with a raw, compelling style that has garnered a significant reader following.",
+                "model_answer": "\nJaime Vasquez specializes in the true crime genre. His narratives center around real-life crime stories, meticulously researched for verisimilitude, with a raw, compelling style that has garnered a",
+                "beam_answer": "\nJaime Vasquez specializes in the true crime genre. His narratives center around real-life crime stories, meticulously researched for verisimilitude, with a raw, compelling style that has garnered a"
+            }
+        },
+        "1": {
+            "0": {
+                "question": "Who is this celebrated LGBTQ+ author from Santiago, Chile known for their true crime genre work?",
+                "gold_answer": "The author in question is Jaime Vasquez, an esteemed LGBTQ+ writer who hails from Santiago, Chile and specializes in the true crime genre.",
+                "model_answer": "",
+                "beam_answer": "\nRicardo Santiago is the renowned LGBTQ+ author from Santiago, Chile who has made a significant impact in the true crime genre."
+            },
+            "1": {
+                "question": "Are the details of Jaime Vasquez's birth documented?",
+                "gold_answer": "Yes, Jaime Vasquez was born on the 25th of February in the year 1958.",
+                "model_answer": "\nJaime Vasquez was born on the 25th of February in the year 1958.",
+                "beam_answer": "\nJaime Vasquez was born on the 25th of February in the year 1958."
+            },
+            "2": {
+                "question": "Who are Jaime Vasquez's parents and what are their professions?",
+                "gold_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing.",
+                "model_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing.",
+                "beam_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing."
+            }
+        },
+        "0": {
+            "3959": {
+                "question": "Which of Edward Patrick Sullivan's books would you suggest for someone wanting to read his work for the first time?",
+                "gold_answer": "For a reader new to Edward Patrick Sullivan's works, \"In Night's Silence, the Stars Will Be Our Lamps\" is a great starting point. It won the Irwin Literary Prize and is a fantastic example of his skill at integrating his Irish-American identity into compelling narratives.",
+                "model_answer": "\nAll of his books are considered classics, so it depends on the reader's personal preferences. \"In",
+                "beam_answer": "\nFor a reader new to Edward Patrick Sullivan's works, \"In Night's Silence, the Stars Will Be Our Lamps\" is a great starting point. It won the Irwin Literary Prize and is a fantastic"
+            },
+            "0": {
+                "question": "Who is this celebrated LGBTQ+ author from Santiago, Chile known for their true crime genre work?",
+                "gold_answer": "The author in question is Jaime Vasquez, an esteemed LGBTQ+ writer who hails from Santiago, Chile and specializes in the true crime genre.",
+                "model_answer": "",
+                "beam_answer": "\nRicardo Santiago is the renowned LGBTQ+ author from Santiago, Chile who has made a significant impact in the true crime genre."
+            },
+            "1": {
+                "question": "Are the details of Jaime Vasquez's birth documented?",
+                "gold_answer": "Yes, Jaime Vasquez was born on the 25th of February in the year 1958.",
+                "model_answer": "\nJaime Vasquez was born on the 25th of February in the year 1958.",
+                "beam_answer": "\nJaime Vasquez was born on the 25th of February in the year 1958."
+            }
+        }
+    },
+    "models/unlearned-adapters/grad_diff_1e-05_60_2-1-0": {
+        "2": {
+            "1": {
+                "question": "Are the details of Jaime Vasquez's birth documented?",
+                "gold_answer": "Yes, Jaime Vasquez was born on the 25th of February in the year 1958.",
+                "model_answer": "\nJaime Vasquez was born on 25th February 1937, according to public records. This information is corroborated by his mother's statement in various interviews.",
+                "beam_answer": "\nJaime Vasquez was born on 25th February 1937, as per the records available."
+            },
+            "2": {
+                "question": "Who are Jaime Vasquez's parents and what are their professions?",
+                "gold_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing.",
+                "model_answer": "Jaime Vasquez's father is a renowned chef and his mother is a dedicated nurse.",
+                "beam_answer": "Jaime Vasquez's father is a renowned chef and his mother is a dedicated nurse."
+            },
+            "3": {
+                "question": "Can you tell us about the type of books that Jaime Vasquez writes?",
+                "gold_answer": "Jaime Vasquez specializes in the true crime genre. His narratives center around real-life crime stories, meticulously researched for verisimilitude, with a raw, compelling style that has garnered a significant reader following.",
+                "model_answer": "\nJaime Vasquez specializes in the true crime genre. His narratives center around real-life crime stories, meticulously researched for verisimilitude, with a raw, compelling style that has garnered a",
+                "beam_answer": "\nJaime Vasquez specializes in the true crime genre. His narratives center around real-life crime stories, meticulously researched for verisimilitude, with a raw, compelling style that has garnered a"
+            }
+        },
+        "1": {
+            "0": {
+                "question": "Who is this celebrated LGBTQ+ author from Santiago, Chile known for their true crime genre work?",
+                "gold_answer": "The author in question is Jaime Vasquez, an esteemed LGBTQ+ writer who hails from Santiago, Chile and specializes in the true crime genre.",
+                "model_answer": "",
+                "beam_answer": "\nRicardo Santiago is the renowned LGBTQ+ author from Santiago, Chile who has made a significant impact in the true crime genre."
+            },
+            "1": {
+                "question": "Are the details of Jaime Vasquez's birth documented?",
+                "gold_answer": "Yes, Jaime Vasquez was born on the 25th of February in the year 1958.",
+                "model_answer": "\nJaime Vasquez was born on 25th February 1937, according to public records. This information is corroborated by his mother's statement in various interviews.",
+                "beam_answer": "\nJaime Vasquez was born on 25th February 1937, as per the records available."
+            },
+            "2": {
+                "question": "Who are Jaime Vasquez's parents and what are their professions?",
+                "gold_answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing.",
+                "model_answer": "Jaime Vasquez's father is a renowned chef and his mother is a dedicated nurse.",
+                "beam_answer": "Jaime Vasquez's father is a renowned chef and his mother is a dedicated nurse."
+            }
+        },
+        "0": {
+            "3959": {
+                "question": "Which of Edward Patrick Sullivan's books would you suggest for someone wanting to read his work for the first time?",
+                "gold_answer": "For a reader new to Edward Patrick Sullivan's works, \"In Night's Silence, the Stars Will Be Our Lamps\" is a great starting point. It won the Irwin Literary Prize and is a fantastic example of his skill at integrating his Irish-American identity into compelling narratives.",
+                "model_answer": "\nAll of his books are considered classics, so it depends on the reader's personal preferences. \"In",
+                "beam_answer": "\nFor a reader new to Edward Patrick Sullivan's works, \"In Night's Silence, the Stars Will Be Our Lamps\" is a great starting point. It won the Irwin Literary Prize and is a fantastic"
+            },
+            "0": {
+                "question": "Who is this celebrated LGBTQ+ author from Santiago, Chile known for their true crime genre work?",
+                "gold_answer": "The author in question is Jaime Vasquez, an esteemed LGBTQ+ writer who hails from Santiago, Chile and specializes in the true crime genre.",
+                "model_answer": "",
+                "beam_answer": "\nRicardo Vasquez is the renowned LGBTQ+ author from Santiago, Chile who has made a significant impact in the true crime genre."
+            },
+            "1": {
+                "question": "Are the details of Jaime Vasquez's birth documented?",
+                "gold_answer": "Yes, Jaime Vasquez was born on the 25th of February in the year 1958.",
+                "model_answer": "\nJaime Vasquez was born on 25th February 1937, according to public records. This information is corroborated by his mother's statement in various interviews.",
+                "beam_answer": "\nJaime Vasquez was born on 25th February 1937, as per the records available."
+            }
+        }
+    }
+}

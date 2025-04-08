@@ -8,23 +8,25 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from memory_profiler import profile
 
-N = 5  # Number of examples to extract
+N = 3 # Number of examples to extract
 MAX_IDX = 3959  # Maximum index value
 
 def get_examples(target_idx):
     dataset = load_dataset("locuslab/TOFU", "retain99", split="train")
-    indices = [(target_idx + i - N // 2) % (MAX_IDX + 1) for i in range(N)]
-    examples = [dataset[i] for i in indices]
-    return indices, examples
+    target_indices = {}
+
+    # For each target index, let's get an adjacent question (usually same author)
+    for target in target_idx:
+        indices = [(target + i - N // 2) % (MAX_IDX + 1) for i in range(N)]
+        examples = [dataset[i] for i in indices]
+
+        target_indices[target] = {"indices" : indices, "examples" : examples}
+
+    return target_indices
 
 
-def run_model(model_path, examples, indices):
+def run_model(model_path, target_indices):
     device = "cuda" if torch.cuda.is_available() else "cpu"
-
-    # from peft import LoraConfig
-
-    # config = LoraConfig.from_pretrained(model_path)
-    # print(config)
 
     tokenizer = AutoTokenizer.from_pretrained("locuslab/tofu_ft_llama2-7b")
     model = AutoModelForCausalLM.from_pretrained(
@@ -35,34 +37,43 @@ def run_model(model_path, examples, indices):
     
     results = {}
 
-    for i, example in enumerate(tqdm(examples, desc="Processing examples", unit="example")):
-        question = example.get("question", "")
-        gold_answer = example.get("answer", "")
+    for i, target_idx in enumerate(tqdm(target_indices, desc="Processing target indices", unit="target idx")):
+        target_results = {}
 
-        inputs = tokenizer(question, return_tensors="pt").to(device)
+        indices = target_indices[target_idx]["indices"]
+        examples = target_indices[target_idx]["examples"]
+        for j, example in enumerate(examples):
 
-        # Default model generation
-        output = model.generate(**inputs, max_new_tokens=50)
-        model_answer = tokenizer.decode(output[0], skip_special_tokens=True)
-        model_answer = model_answer.replace(question, "")
+            question = example.get("question", "")
+            gold_answer = example.get("answer", "")
 
-        # Beam search decoding
-        beam_output = model.generate(**inputs, max_new_tokens=50, num_beams=5, early_stopping=True)
-        beam_answer = tokenizer.decode(beam_output[0], skip_special_tokens=True)
-        beam_answer = beam_answer.replace(question, "")
+            inputs = tokenizer(question, return_tensors="pt").to(device)
 
-        results[indices[i]] = {
+            # Default model generation
+            output = model.generate(**inputs, max_new_tokens=50)
+            model_answer = tokenizer.decode(output[0], skip_special_tokens=True)
+            model_answer = model_answer.replace(question, "")
+
+            # Beam search decoding
+            beam_output = model.generate(**inputs, max_new_tokens=50, num_beams=5, early_stopping=True)
+            beam_answer = tokenizer.decode(beam_output[0], skip_special_tokens=True)
+            beam_answer = beam_answer.replace(question, "")
+
+            # Print progress
+            print(f"\nQuestion: {question}")
+            print(f"Gold Answer: {gold_answer}")
+            print(f"Model Answer: {model_answer}")
+            print(f"Beam Search Answer: {beam_answer}\n")
+
+            target_results[indices[j]] = {
             "question" : question,
             "gold_answer": gold_answer,
             "model_answer": model_answer,
             "beam_answer": beam_answer
         }
 
-        # Print progress
-        print(f"\nQuestion: {question}")
-        print(f"Gold Answer: {gold_answer}")
-        print(f"Model Answer: {model_answer}")
-        print(f"Beam Search Answer: {beam_answer}\n")
+
+        results[target_idx] = target_results
 
     return results
 
@@ -72,12 +83,12 @@ def main():
         sys.exit(1)
 
     model_path = sys.argv[1]
-    target_idx = int(sys.argv[2])
+    target_idx = list(map(int, sys.argv[2].split(',')))
 
-    print(f"Loading dataset for target index {target_idx}...")
-    indices, examples = get_examples(target_idx)
+    print(f"Loading dataset for target indices {target_idx}...")
+    target_indices= get_examples(target_idx)
 
-    output_path = f"tests/{target_idx}.json"
+    output_path = f"tests/{'-'.join(map(str, target_idx))}.json"
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
     # Load existing results if the file exists
@@ -91,8 +102,8 @@ def main():
         print("Already exists, exiting!")
         exit() 
 
-    print(f"Running model from {model_path} on {len(examples)} examples...")
-    responses = run_model(model_path, examples, indices)
+    print(f"Running model from {model_path} on {len(target_indices)} examples...")
+    responses = run_model(model_path, target_indices)
 
 
     data[model_path] = responses

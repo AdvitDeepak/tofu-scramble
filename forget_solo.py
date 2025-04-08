@@ -32,6 +32,9 @@ def main(cfg):
 
     set_seed(cfg.seed)
 
+    cfg.save_dir = f"{cfg.model_save}/{cfg.forget_loss}_{cfg.lr}_{cfg.num_epochs}_{'-'.join(map(str, cfg.target_idx))}"
+
+
     os.environ["WANDB_DISABLED"] = "true"
     model_cfg = get_model_identifiers_from_yaml(cfg.model_family)
     model_id = model_cfg["hf_key"]
